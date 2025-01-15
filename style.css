@@ -172,6 +172,16 @@ p.timeWarning span p {
 	color: white;
 }
 
+p.image {
+    max-width:50%;
+    overflow:visible;
+}
+
+p.image img {
+	position:relative;
+    max-width:100%;
+}
+
 /* ================================================================= */
 /* PATCH SPECIFIC CSS                                                */
 /* ================================================================= */

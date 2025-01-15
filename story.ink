@@ -5,31 +5,43 @@
 -> graduationParty
 == graduationParty ==
 The ride to your secret spot has never been an easy one, and though it was made easier when you and Heather decided to spend the better part of a summer turning your path of convenience into something that resembled a real road, you still feel every remaining rock and hole as you make your way down it. The sun setting directly in front of you doesn’t help, but at least the radio tower starts to block it out the closer you get.
+
 * [Continue]
+-
 You’re the first to show up. Heather had called before you left the house to let you know she’d be late, but for her, that usually meant she just wouldn’t be early.
+
 You shut off the engine. You don’t need another lecture from your dad about taking care of his truck by running out the battery again.
 -
 	* You feel anxious without Heather here. <>
 		-> anxiousTruck
 	* You’re glad for the chance to be alone. <>
 		-> vibeOutside
+
 == anxiousTruck ==
 This is <i>her</i> secret spot, really, and it has never felt right to be here without her. When she gets here, then you’ll truly be able to appreciate your last night by the tower.
+
 You roll down the window of the truck, glad for the breeze heralding the cooler night fast approaching.
+
 * [Continue]
 ->heatherArrives
+
 == vibeOutside ==
 Tonight is your final hurrah, and you’re glad for the chance to say goodbye to this place that has meant so much to you for all these years.
+
 You grab your blanket as you hop out of the truck, set up in your usual spot, and wait.
+
 TIME WILL ADVANCE #class: timeWarning
+
 * [Continue]
 ->heatherArrives
+
 == heatherArrives  ==
 #CLEAR
 #image: blinking.gif # class: blinking
 #time: 8:00 PM
 Eventually, you hear the tell-tale rumbling of Heather’s mom’s car in the distance, and {anxiousTruck:hop out of the truck to meet her.|sit up and wave as she approaches.}
 She parks her car near yours, angling it toward the circle of flattened grass for optimal headlight efficiency when the sun fully sets.
+
 {anxiousTruck:
 	“Did you just get here?” she asks as she drags a large bag loaded down with snacks and who knows what else out of the car with her.
 	You shrug. “Something like that.”
@@ -39,66 +51,113 @@ She has a large bag full of snacks and who knows what else that she drops down i
 “Nah. Just taking in the evening air.”
 Heather smiles. “Couldn’t have asked for better weather.” She glances back at your truck. <>
 }
+
 “Did you bring the cooler?”
 You nod, {vibeOutside:and accept her hand to help yank you up off the ground, }then head to the back of the truck, lower the tailgate, and the two of you haul the heavy cooler over to the bag of snacks.
+
 {vibeOutside:You sit back down on your blanket|You perch on the cooler}, and Heather lounges back on {vibeOutside:her own|her blanket} next to you.
+
 “Do you remember our first time out here?” she asks.
+
 You nod. It was years ago, back in grade school, but you still remember it like it was yesterday.	
+
 * You had just moved to town.
 	->transferStudent
 * You had just broken your arm.
 	->brokenArm
 * You were paired up for a project.
 	->projectPartners
+
 == transferStudent ==
 “I was the new kid. There were only, what, five other kids in the whole elementary school who hadn’t grown up here?”
+
 Heather nods. “Not many people willingly move to a place that doesn’t even have a Walmart.”
 “Or Starbucks. But nowhere else has Joe’s Diner, either. Not that he’ll serve you anything but black coffee.”
+
 Heather laughs. “He even offered it to us at ten years old when I took you there that first weekend you started school.”
+
 “I’d never had it. Or anything more caffeinated than a cup of soda. I thought I was dying,” you say, still embarrassed at the memory.
+
 “I felt so bad,” Heather says, equally embarrassed. “So I took you to the place that always calmed <i>me</i> down. Of course, you weren’t in a state to ride your bike, so we had to trudge through the field on foot.”
+
 “My mom freaked when I got home. My first ever tick-check,” you say, wrinkling your nose.
+
 “The first of many.”
+
 “It was worth it, though,” you say.
+
 *[Continue]
 ->backToHeather
+
 == brokenArm ==
 “I broke my arm falling out of a tree.”
+
 “Pretty cliche of you,” Heather teases.
+
 You roll your eyes. “That’s what you said then, too. I thought you were making fun of me–”
+
 “And you <i>immediately</i> started crying,” Heather adds with a laugh.
+
 “<i>And</i> you felt so bad you asked if I wanted in on a secret.”
+
 “Pure panic response. I spent the rest of the day trying to figure out how to get out of it. But you were determined.”
+
 “I was determined,” you agree. “TV taught me sharing secrets was the foundation of friendship, and I wanted more friends.”
+
 “And now you’re stuck with me,” Heather says proudly.
+
 “After you convinced me you weren’t trying to kill me by taking me into a corn field. Did you know I had just watched Children of the Corn the previous weekend?”
+
 Heather looks aghast. “You were ten! Your parents barely let you watch scary movies <i>now</i>.”
+
 “I was feeling rebellious, and Walt never pays attention to who is renting what.”
+
 “Until they’re late.”
+
 *[Continue]
 ->backToHeather
+
 == projectPartners ==
 “We were grouped together for that science project. I don’t think we had really talked before that,” you say.
+
 “I think that was the first year we were in the same class. We didn’t even sit next to each other, but Mrs. Fletcher had us pull our partner out of a hat rather than us just grabbing our friends or the person sitting next to us.”
+
 “She liked to do eclectic things like that. Like she wanted to teach at one of those schools where you’re taught outside and get graded in stickers, but had to teach here.”
+
 Heather laughs. “It’s a good thing, too. Do you remember what we were assigned to do?”
+
 “It was a report on the local ecosystem or something, right? Like we were supposed to research native plants or bugs or whatever? I just remember checking out some encyclopedias from the library.”
+
 “I forgot about the encyclopedias,” Heather groans.
+
 You ignore the interruption. “I thought we were going to do our work there, but you said you had a better place to work,” you say dryly.
+
 “In fairness to past me, this is a better place.”
+
 “Not for working. Do you remember what we turned in?”
+
 “I <i>had</i> only remembered we had just grabbed some weeds and a baby ear of corn, but then you mentioned the encyclopedias…”
+
 “You had just learned about pressing flowers, and we convinced ourselves that would be the best way to preserve the weeds until Monday.”
+
 You both burst into laughter.
+
 “I just remember the look on Mrs. Fletcher’s face when we turned it in,” you say once your laughter calms down. “And then when our parents found out they’d have to split the bill in ordering a whole new set of encyclopedias, since the ones we used were out of print.”
+
 “Still got a B, though,” Heather says.
+
 “Still got a B,” you agree.
 ->backToHeather
+
 ==backToHeather==
 You remember Heather finally coming out of the corn to the clearing around the radio tower that Heather had made. {transferStudent:You both had laid down to stare up at the sky, Heather pointing out shapes in the clouds until you eventually calmed down enough to join her.}{brokenArm:You regaled Heather with the tale of breaking your arm and the various hospital visits, while she looked appropriately intrigued and horrified.}{projectPartners:You both had started on track by looking up some flower names you remembered, before realizing you didn’t actually know the names of any of the flowers around you, and decided bringing examples of native plants made more sense, anyway.} By the time you left, Heather had to dig out flashlights and batteries she kept stashed under the tower so you both could find your ways home.
+
 “It’s fitting to end where it started. Here.{anxiousTruck: With you.}”
+
 Heather just smiles.
+
 TIME WILL ADVANCE #class: timeWarning
+
 * [Continue]
 -> taylorArrives
 
@@ -107,31 +166,62 @@ TIME WILL ADVANCE #class: timeWarning
 #image: blinking.gif # class: blinking
 #time: 8:17 PM
 You’re so wrapped up talking to Heather, you almost don’t notice Taylor’s rickety station wagon making its way carefully down the path. She parks it on the opposite side of your and Heather’s cars, and heads to the trunk without acknowledging the two of you.
+
 After a moment, you hear the trunk slam closed, and she comes back around carrying her boombox, CD binder, and a lawn chair.
+
 “Hell yeah, the tunes are here!” Heather says. She stands up and takes the boombox and binder and sets it on the ground between her blanket and where Taylor folds out her lawn chair a few feet away.
+
 “Any requests?” Heather asks.
+
 You glance at Taylor first, who shrugs, then choose…
+
 *[Bright Eyes]
-//~music = “Bright Eyes”
+// ~music = “Bright Eyes”
 *[Weezer]
-//~music = “Weezer”
+// ~music = “Weezer”
 *[Paramore]
-//~music = “Paramore”
+// ~music = “Paramore”
 *[Taylor Swift]
-//~music = “Taylor Swift”
+// ~music = “Taylor Swift”
 -
 TODO figure out if we’re doing a randomized album function or background music
 TODO add descriptions of what you’re listening to
+
 You pop in the cd and recline back on the {anxiousTruck:cooler|blanket}. Heather’s laying down with her eyes closed, while Taylor is doodling in a pocket notebook she always carries around.
+
 You’ve technically known Taylor for a while, but it was only last year that Heather invited her to come out here with you and Sam.
 
-*TODO backstory -> taylorChoice1
-*TODO backstory -> taylorChoice2
-== taylorChoice1 ==
+*[Taylor’s car has broken down, and Heather offered her a ride.]
+-> carTroubles
+*The four of you were in Drama Club together.
+-> dramaClub
+*You and Taylor always lagged behind “running” laps in gym.
+	->gymBuds
+
+== carTroubles ==
+You were with Heather on your way here, to what you both still called your secret spot, despite Sam being a part of the group by this point, when you noticed that rickety station wagon on the side of the road.
+
+You had seen Taylor by that point, of course. Everyone knows everyone in a town this size, and you shared a few classes together. She was quiet. Not shy, necessarily, just a bit withdrawn. Comfortable in her own world.
+You had never seen her as panicked as she was when you and Heather pulled over to see if you could offer any help.
+
+She was on her way to work at Joe’s Diner, and couldn’t afford to miss a shift on top of having no way to contact anyone about it. Even if she had had a cellphone, to say the signal is spotty around here would be an understatement.
+
+Heather offered to drive her to work and even picked her up after her shift. She was still stressed, though, so {transferStudent:like she had done for you years before,} Heather took her to your secret spot to unwind.
+
 TIME WILL ADVANCE #class: timeWarning
 * [Continue]
 	-> bobbyAndSamArrive
-== taylorChoice2 ==
+
+== dramaClub ==
+TODO
+
+TIME WILL ADVANCE #class: timeWarning
+* [Continue]
+	-> bobbyAndSamArrive
+
+== gymBuds ==
+TODO
+
 TIME WILL ADVANCE #class: timeWarning
 * [Continue]
 	-> bobbyAndSamArrive
@@ -269,7 +359,7 @@ Bobby rubs his hands together.
 
 You look around the group. Taylor is still focused on her drawings. Sam lays back and stares up at the radio tower. Beside you, Heather lights the joint and takes the first hit. Bobby is looking around, and for the first time, you think he looks kind of uncomfortable.
 
-TIME WILL ADVANCE #class: timeWarning
+TIME WILL ADVANCE. #class: timeWarning
 
 * [Offer Taylor a drink.] -> taylor1
 * [{pcSmokes:Ask Heather for the joint.|Turn to Heather.}] -> heather1
@@ -288,5 +378,15 @@ TODO
 
 
 
+
+
 -
     -> END
+
+
+// ===function getAlbum() ===
+// {music == “Bright Eyes”:
+// 	~return “{~Cassadaga|Digital Ash in a Digital Urn|I’m Wide Awake, It’s Morning|Lifted or The Story Is in the Soil, Keep Your Ear to the Ground|Fevers and Mirrors|Letting Off the Happiness}
+// 	}
+// {music == “Weezer”:
+// 	~return “{~Blue Album|Pinkerton|the Green Album|Maldroit|Make Believe|the Red Album
