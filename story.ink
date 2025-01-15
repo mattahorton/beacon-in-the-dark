@@ -252,6 +252,18 @@ Bobby rubs his hands together.
 “Hey! Don’t forget. I bring the weed,” says Sam, pulling a joint and a lighter out of each of his pockets.
 
 “And Sam brings the weed,” says Heather, reaching out to take them from him.
+
+“Oh, you smoke?” Bobby asks you?
+
+* “Nah. Not really.” -> pcDoesNotSmoke
+* “Sometimes.” -> pcSmokes
+== pcDoesNotSmoke ==
+-> afterWeed
+== pcSmokes ==
+-> afterWeed
+== afterWeed ==
+<br>
+“Cool,” he smiles back.
 *[Continue]
 -
 
@@ -260,7 +272,7 @@ You look around the group. Taylor is still focused on her drawings. Sam lays bac
 TIME WILL ADVANCE #class: timeWarning
 
 * [Offer Taylor a drink.] -> taylor1
-* [Ask Heather for the joint.] -> heather1
+* [{pcSmokes:Ask Heather for the joint.|Turn to Heather.}] -> heather1
 * [Ask what Bobby is looking at.] -> bobby1
 * [Go lay next to Sam.] -> sam1
 
