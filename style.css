@@ -162,6 +162,16 @@ a:hover
 	margin: auto;
 }
 
+p.timeWarning {
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+p.timeWarning span p {
+	font-weight: 800;
+	font-size: 9pt;
+	color: white;
+}
+
 /* ================================================================= */
 /* PATCH SPECIFIC CSS                                                */
 /* ================================================================= */
@@ -175,7 +185,7 @@ a:hover
 	height: calc(100vw * 0.2);
 	overflow: hidden;
 	position: relative;
-}
+}p
 
 .frameLayer
 {

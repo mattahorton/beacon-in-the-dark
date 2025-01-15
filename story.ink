@@ -21,6 +21,7 @@ You roll down the window of the truck, glad for the breeze heralding the cooler 
 == vibeOutside ==
 Tonight is your final hurrah, and you’re glad for the chance to say goodbye to this place that has meant so much to you for all these years.
 You grab your blanket as you hop out of the truck, set up in your usual spot, and wait.
+TIME WILL ADVANCE #class: timeWarning
 * [Continue]
 ->heatherArrives
 == heatherArrives  ==
@@ -97,6 +98,7 @@ You both burst into laughter.
 You remember Heather finally coming out of the corn to the clearing around the radio tower that Heather had made. {transferStudent:You both had laid down to stare up at the sky, Heather pointing out shapes in the clouds until you eventually calmed down enough to join her.}{brokenArm:You regaled Heather with the tale of breaking your arm and the various hospital visits, while she looked appropriately intrigued and horrified.}{projectPartners:You both had started on track by looking up some flower names you remembered, before realizing you didn’t actually know the names of any of the flowers around you, and decided bringing examples of native plants made more sense, anyway.} By the time you left, Heather had to dig out flashlights and batteries she kept stashed under the tower so you both could find your ways home.
 “It’s fitting to end where it started. Here.{anxiousTruck: With you.}”
 Heather just smiles.
+TIME WILL ADVANCE #class: timeWarning
 * [Continue]
 -> taylorArrives
 
@@ -126,10 +128,11 @@ You’ve technically known Taylor for a while, but it was only last year that He
 *TODO backstory -> taylorChoice1
 *TODO backstory -> taylorChoice2
 == taylorChoice1 ==
+TIME WILL ADVANCE #class: timeWarning
 * [Continue]
 	-> bobbyAndSamArrive
 == taylorChoice2 ==
-
+TIME WILL ADVANCE #class: timeWarning
 * [Continue]
 	-> bobbyAndSamArrive
 
@@ -236,14 +239,39 @@ In any other town, Bobby’s not the kind of guy you’d spend any time with, bu
 -> everyonesHere
 
 == everyonesHere ==
-
+*[Continue]
+-
 Bobby rubs his hands together.
 
 "So what do you y'all do out here?"
 
 "This, mostly," says Taylor without looking up from her notebook.
 
+“Yeah, it’s great. Taylor brings the music. I bring beers, if I can get ‘em,” you say. “And Heather brought us all out here to begin with.”
 
+“Hey! Don’t forget. I bring the weed,” says Sam, pulling a joint and a lighter out of each of his pockets.
+
+“And Sam brings the weed,” says Heather, reaching out to take them from him.
+*[Continue]
+-
+
+You look around the group. Taylor is still focused on her drawings. Sam lays back and stares up at the radio tower. Beside you, Heather lights the joint and takes the first hit. Bobby is looking around, and for the first time, you think he looks kind of uncomfortable.
+
+TIME WILL ADVANCE #class: timeWarning
+
+* [Offer Taylor a drink.] -> taylor1
+* [Ask Heather for the joint.] -> heather1
+* [Ask what Bobby is looking at.] -> bobby1
+* [Go lay next to Sam.] -> sam1
+
+== taylor1 ==
+TODO
+== heather1 ==
+TODO
+== bobby1 ==
+TODO
+== sam1 ==
+TODO
 
 
 
