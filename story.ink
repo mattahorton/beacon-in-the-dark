@@ -1,3 +1,4 @@
+// VAR music = “”
 #image: blinking.gif # class: blinking
 #time: 7:45 PM
 
@@ -103,8 +104,32 @@ Heather just smiles.
 #clear
 #image: blinking.gif # class: blinking
 #time: 8:17 PM
-TODO 
+You’re so wrapped up talking to Heather, you almost don’t notice Taylor’s rickety station wagon making its way carefully down the path. She parks it on the opposite side of your and Heather’s cars, and heads to the trunk without acknowledging the two of you.
+After a moment, you hear the trunk slam closed, and she comes back around carrying her boombox, CD binder, and a lawn chair.
+“Hell yeah, the tunes are here!” Heather says. She stands up and takes the boombox and binder and sets it on the ground between her blanket and where Taylor folds out her lawn chair a few feet away.
+“Any requests?” Heather asks.
+You glance at Taylor first, who shrugs, then choose…
+*[Bright Eyes]
+//~music = “Bright Eyes”
+*[Weezer]
+//~music = “Weezer”
+*[Paramore]
+//~music = “Paramore”
+*[Taylor Swift]
+//~music = “Taylor Swift”
 -
+TODO figure out if we’re doing a randomized album function or background music
+TODO add descriptions of what you’re listening to
+You pop in the cd and recline back on the {anxiousTruck:cooler|blanket}. Heather’s laying down with her eyes closed, while Taylor is doodling in a pocket notebook she always carries around.
+You’ve technically known Taylor for a while, but it was only last year that Heather invited her to come out here with you and Sam.
+
+*TODO backstory -> taylorChoice1
+*TODO backstory -> taylorChoice2
+== taylorChoice1 ==
+* [Continue]
+	-> bobbyAndSamArrive
+== taylorChoice2 ==
+
 * [Continue]
 	-> bobbyAndSamArrive
 
@@ -113,54 +138,111 @@ TODO
 #image: blinking.gif # class: blinking
 #time: 8:39 PM
 
-The sun’s almost gone. It gets darker out here, and when you look up you see the red light on the tower is already on.
+The sun’s almost gone. It gets darker out here than it does in town, and when you look up you see the red light on the tower is already on.
 
-When you look back down, another car truck, much nicer than your dad’s, is pulling up to the clearing. Two people get out and start walking your way. They’re being much louder than the vibe, if you’re honest.
+When you look back down, another truck, much nicer than your dad’s, is pulling up to the clearing. The driver does a 3-point turn as gracefully as you’ve ever seen and backs up next to Heather’s car. Two people get out and start walking your way. They’re being much louder than the vibe, if you’re honest.
 
-“Ha! What?! They’ve got the whole band now?”
+“Ha! What?! They’ve got the whole band now?” yells a voice you know well.
 
 “Yeah. You gotta check it out. You should come over and play some time. My sister doesn’t wanna play with me.”
 
-Sam was finally here, and to your surprise, he brought Bobby with him. 
+Sam is finally here, and to your surprise, he’s brought Bobby with him. The two of them stop in front of your {anxiousTruck: cooler|blanket} and Sam says “What’s up?” with a grin you can’t quite see but you know is there. 
 
-You and Sam go way back.
+You and Sam go way back. You remember the day you met.
 
-* TODO backstory -> samChoice1
-* TODO backstory -> samChoice2
-* … -> bobbyIntro
+* [Sam ate a bug at recess.] -> samBug
+* [You traded Pokémon cards.] -> samPokemon
 
-== samChoice1 ==
-TODO
+== samBug ==
+“Hey Sam. Can’t believe you actually graduated. To me you’re still the kid who ate a grasshopper in the 4th grade.”
+
+“Ha!” Sam yells, throwing his hands in the air. “Fuck, I’d do it now. Don’t even need a dare this time.”
+
+Heather rolls her eyes and laughs.
+“We know, Sam.”
 -> bobbyIntro
 
-== samChoice2 ==
-TODO
+== samPokemon ==
+“Glad you made it. By the way, Sam, just in case I never see you again. You ever gonna give me back my foil Blastoise?” you say.
+
+“<i>Hell</> no! We made that trade fair and square. Besides we were 9.”
+
+“Fair’s pushing it. You gave me a Charmander,” you say while chuckling. “But I just wanted to mess with you.”
 -> bobbyIntro
 
 == bobbyIntro ==
-Bobby, on the other hand, was new. At least to this group. 
-“Uh…hey,” he says without really looking at anyone specific, “is it cool if I sit on the tailgate?”
-* “Yeah, sure[.”],” you say.
-	-> bobbyTailgate
-* “We’ve got room over here. It’s an old truck and it’s already broken once[.”],” you say
+*[Continue]
+-
+Unlike Sam, Bobby is new. At least to this group. 
+“Hey,” he says, looking directly at you in a way that’s kind of intimidating. “Got any more blankets?”
+* {vibeOutside} “Yeah, sure. We can make room[.”],” you say.
 	-> bobbyBlanket
-* [You pretend not to hear him.]
+* “Uh…Sorry. I would’ve brought more[.”],” you say.
+	-> bobbyTailgate
+* {anxiousTruck} [You pretend not to hear him.]
 	-> bobbyIgnore
 
 == bobbyTailgate ==
-“Cool.” Bobby TODO
+“That’s alright. Got a seat right here.”
+Bobby lets his tailgate down and hops up on the bed, putting his backpack behind him. He invites Sam to sit next to him.
 -> backToBobby
 
 == bobbyBlanket ==
-“Oh, thanks,” he says, setting a backpack down on the ground. 
+“Oh, thanks,” he says, setting a backpack down on the ground. Sam and Bobby join you on the blankets.
 -> backToBobby
 
 == bobbyIgnore ==
-Bobby was pretty popular.
+You don’t know what to say, so you do your best to act like you didn’t hear him.
+“We’ll make room for you, Bobby,” says Heather, who knows exactly what you're doing. “Glad you made it.”
+Taylor and Heather scoot closer to the radio tower, and Sam and Bobby sit down on their blankets. Taylor’s blanket is kind of small, you think. Sam might as well be sitting in the grass.
 -> backToBobby
 
 == backToBobby ==
-TODO
+-
+* [Continue]
+-
+You don’t know Bobby that well. But you do know him, obviously.
+* He’s the captain of the basketball team.
+-> bobbyBasketball
+* [He used to date Liz Brown.]
+-> bobbyGirlfriend
+* [His parents own half the town.]
+-> bobbyRich
+
+== bobbyBasketball ==
+<> You heard he's got a scholarship at some fancy school with a famous coach. Until Sam started inviting him to lunch, you mostly saw Bobby's name in the paper your dad reads every morning.
+
+Bobby put your town on the map as far as basketball goes. Until he joined the team, your high school had never even been group champion, much less state. You don’t really know what that means, honestly, but it's all any of the parents could talk about the whole time you were in high school.
+
+Despite the stereotype of the team captain, Bobby seems fine. Even nice, maybe.
+-> everyonesHere
+
+== bobbyGirlfriend ==
+Until recently, Bobby was dating Liz Brown, who's the kind of girl who doesn't belong in this town. She is extremely confident and has a huge personality, and in this town that makes you popular. 
+
+You and Liz were close back in elementary school, and you just grew apart over the years. She is still nice to you, but you don't really have anything in common any more. Until Sam started hanging out with him the last few months, you kind of felt the same way about Bobby.
+
+Bobby and Liz had been together since Sophomore year, and everyone was surprised when they broke up. No one knew why though.
+
+Sam started inviting Bobby to sit with you at lunch every once in a while a few months back. They mostly talked about guitars, both real ones and plastic ones. Bobby and Sam are both into the same kind of music, the stuff your dad listens to, and the only other time you've hung out with Bobby outside of school was when you all went over to Sam's place to play Guitar Hero.
+-> everyonesHere
+
+== bobbyRich ==
+Bobby's family is rich. Like <i>rich</i> rich. You don't really know what they do, but it's something about real estate.
+
+The truck Bobby drove up in, the nice one? That's <i>his</i>, not his parents. Bobby is always missing random Fridays because his family has to fly to places like New York and LA for the weekend. You wonder why they live in a place like this.
+
+In any other town, Bobby’s not the kind of guy you’d spend any time with, but this town is too small to avoid people for a reason like that. He and Sam have been hanging out a lot the last few months, and you even kind of enjoy his company sometimes.
+-> everyonesHere
+
+== everyonesHere ==
+
+Bobby rubs his hands together.
+
+"So what do you y'all do out here?"
+
+"This, mostly," says Taylor without looking up from her notebook.
+
 
 
 
