@@ -320,11 +320,8 @@ class Story
 		// we stop here if the story is already looping
 		if (this.state != Story.states.idle)
 		{
-			console.log('bad')
 			return;
 		}
-
-		console.log('good')
 
 		// otherwise, mark that the story object is now active
 		this.state = Story.states.active;

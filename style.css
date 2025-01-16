@@ -1,6 +1,6 @@
 body
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Arial', sans-serif;
 	font-weight: 300;
 	background: black;
 	color: white;
@@ -39,14 +39,15 @@ body
 #story
 {
 	position: relative;
-	margin: 0 auto;
-	overflow: hidden;
-	height: 100%;
+	margin: 4em auto;
+	overflow: scroll;
+	max-height: 80%;
 	width: 700px;
 	min-width: 60vw;
 	max-width: 80vw !important;
 	transition: opacity 2s ease;
 	padding: 0em 1em 0em 1em;
+	background-color: black;
 }
 
 @media (hover:none), (hover:on-demand)
@@ -58,7 +59,7 @@ body
 }
 
 #story > *:first-child {
-	margin-top: 10vh !important;
+	margin-top: 5vh !important;
 }
 
 #story > *:last-child 
@@ -129,7 +130,7 @@ a:hover
     text-align: center;
     position: fixed;
 	left: 40px;
-    top: 4px;
+    bottom: 4px;
 }
 
 #timeText

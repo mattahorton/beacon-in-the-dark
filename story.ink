@@ -1,6 +1,7 @@
 // VAR music = “”
-#image: blinking.gif # class: blinking
+#background: purplesunset.jpg
 #time: 7:45 PM
+#play: CornField2PM.mp3 >> volume: 0.2
 
 -> graduationParty
 == graduationParty ==
@@ -22,6 +23,8 @@ This is <i>her</i> secret spot, really, and it has never felt right to be here w
 
 You roll down the window of the truck, glad for the breeze heralding the cooler night fast approaching.
 
+TIME WILL ADVANCE #class: timeWarning
+
 * [Continue]
 ->heatherArrives
 
@@ -37,7 +40,7 @@ TIME WILL ADVANCE #class: timeWarning
 
 == heatherArrives  ==
 #CLEAR
-#image: blinking.gif # class: blinking
+#background: greensunset.jpeg
 #time: 8:00 PM
 Eventually, you hear the tell-tale rumbling of Heather’s mom’s car in the distance, and {anxiousTruck:hop out of the truck to meet her.|sit up and wave as she approaches.}
 She parks her car near yours, angling it toward the circle of flattened grass for optimal headlight efficiency when the sun fully sets.
@@ -163,8 +166,9 @@ TIME WILL ADVANCE #class: timeWarning
 
 == taylorArrives ==
 #clear
-#image: blinking.gif # class: blinking
+#background: orangesunset.jpg
 #time: 8:17 PM
+#stop: CornField2PM.mp3
 You’re so wrapped up talking to Heather, you almost don’t notice Taylor’s rickety station wagon making its way carefully down the path. She parks it on the opposite side of your and Heather’s cars, and heads to the trunk without acknowledging the two of you.
 
 After a moment, you hear the trunk slam closed, and she comes back around carrying her boombox, CD binder, and a lawn chair.
@@ -177,12 +181,16 @@ You glance at Taylor first, who shrugs, then choose…
 
 *[Bright Eyes]
 // ~music = “Bright Eyes”
+#playonce: BrightEyes.mp3 >> volume: 0.3
 *[Weezer]
 // ~music = “Weezer”
+#playonce: Weezer.mp3 >> volume: 0.3
 *[Paramore]
 // ~music = “Paramore”
+#playonce: Paramore.mp3 >> volume: 0.2
 *[Taylor Swift]
 // ~music = “Taylor Swift”
+#playonce: TaylorSwift.mp3 >> volume: 0.2
 -
 TODO figure out if we’re doing a randomized album function or background music
 TODO add descriptions of what you’re listening to
@@ -228,8 +236,10 @@ TIME WILL ADVANCE #class: timeWarning
 
 == bobbyAndSamArrive ==
 #clear
+#background: none.jpg
 #image: blinking.gif # class: blinking
 #time: 8:39 PM
+#stop
 
 The sun’s almost gone. It gets darker out here than it does in town, and when you look up you see the red light on the tower is already on.
 

@@ -10,6 +10,12 @@ import "./patches/dragtoscroll.js";
 // convert markdown to HTML tags
 import "./patches/markdowntohtml.js"
 
+// musicplayer
+import "./patches/musicplayer.js"
+
+// sfx
+import "./patches/audiohandler.js"
+
 // -----------------------------------
 
 // import helper patch for binding shortcuts to choices
@@ -50,7 +56,6 @@ Patches.add(function () {
 });
 
 Tags.add("time", function(story, time) {
-	console.log(time)
 	// set story time
 	story.time = time;
 	let timeText = document.getElementById("timeText");

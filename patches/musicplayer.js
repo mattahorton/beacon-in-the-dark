@@ -82,7 +82,8 @@ Tags.add("stop", function(story, property)
 
 Tags.add("volume", function(story, property)
 {
-	audio.volume(story, property, property.options); 
+	let _thisvolume = parseFloat(property);
+	audio.volume = _thisvolume; 
 });
 
 function process(story, property)
@@ -124,6 +125,9 @@ class audio
 		options.fadein = parseFloat(options.fadein) || story.options.musicplayer_fadein;
 		options.fadeout = parseFloat(options.fadeout) || story.options.musicplayer_fadeout;
 		options.delay = parseFloat(options.delay) || 0;
+		options.volume = parseFloat(parseFloat(options["> volume"])) || 0.5;
+	
+		audio.volume = options.volume;
 		
 		if (!story.options.musicplayer_allowmultipletracks && audio.sounds.size)
 		{
@@ -168,21 +172,21 @@ class audio
 		if (file)
 		{
 			var track = audio.sounds.get(file.name);
-			if (track) kill(track, options);
+			if (track) kill(track, file.name, options);
 		}
 		else
 		{
-			audio.sounds.forEach((file) => kill(file, options));
+			audio.sounds.forEach((file, key) => kill(file, key, options));
 		}
 
-		function kill(sound, options = {})
+		function kill(sound, fileName, options = {})
 		{
 			if (sound.fadeout) clearTimeout(sound.fadeout);
 			sound.fade(audio.volume, 0, options.duration);
 			setTimeout(function() 
 				{ 
 					sound.stop(); 
-					audio.sounds.delete(sound);
+					audio.sounds.delete(fileName);
 				}, options.duration);
 		}
 	}
