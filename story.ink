@@ -201,7 +201,7 @@ You’ve technically known Taylor for a while, but it was only last year that He
 
 *[Taylor’s car has broken down, and Heather offered her a ride.]
 -> carTroubles
-*The four of you were in Drama Club together.
+*The four of you were in drama club together.
 -> dramaClub
 *You and Taylor always lagged behind “running” laps in gym.
 	->gymBuds
@@ -222,6 +222,15 @@ TIME WILL ADVANCE #class: timeWarning
 
 == dramaClub ==
 TODO
+The bonds forged in drama club are not ones easily broken. You, Heather, and Sam all joined together since Freshman year, but it wasn’t until last year that Taylor joined.
+
+You remember the air of silent surprise when she showed up to the first meeting of the year. She’s always been, well, not <i>shy</i> necessarily, but certainly quiet. Reserved. Definitely not the sort of person you’d expect to take to the stage.
+
+She had noticed the off mood of the room and seemed uncomfortable enough that she might leave, but Heather had smiled and waved her over and asked what sort of parts she was excited to play.
+
+She just shrugged. “Whatever’s left. Or just set design.”
+
+That was novel. A
 
 TIME WILL ADVANCE #class: timeWarning
 * [Continue]
