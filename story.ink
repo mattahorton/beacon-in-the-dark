@@ -401,6 +401,10 @@ TIME WILL ADVANCE. #class: timeWarning
 * [Go lay next to Sam.] -> sam1
 
 == taylor1 ==
+#clear
+#image: blinking.gif # class: blinking
+#time: 8:40 PM
+
 “Hey, Taylor,” you say and wave for her attention.
 
 “What’s up?” she says without looking at you.
@@ -417,10 +421,17 @@ TODO
 //gosh dangit what was my “or” I forgot it in the middle of typing
 ->roundTwo
 == heather1 ==
+#clear
+#image: blinking.gif # class: blinking
+#time: 8:40 PM
 TODO
 //heather asks you about your plans after school
 ->roundTwo
 == bobby1 ==
+#clear
+#image: blinking.gif # class: blinking
+#time: 8:40 PM
+
 “Looking for something?” you say to Bobby. It’s clear you’ve startled him.
 
 “Uhhhh…honestly, I’m just feeling kind of out of place,” he says. Even when he’s feeling awkward he still has the confidence to admit it. {bobbyRich: Is that a rich kid thing?}
@@ -439,6 +450,10 @@ As you choke on the word, Bobby smiles and looks at the ground. {bobbyGirlfriend
 * [Continue]
 ->roundTwo
 == sam1 ==
+#clear
+#image: blinking.gif # class: blinking
+#time: 8:40 PM
+
 TODO
 //either PC asks sam about bobby or sam asks PC what they think about bobby
 ->roundTwo
