@@ -1,5 +1,5 @@
 TODO add more tie ins to the blinking radio tower light
-	Matt, feel free to rewrite bits of my sections if you happen to have an idea of how to implement it, otherwise, I’ll look back over it all later
+	//Matt, feel free to rewrite bits of my sections if you happen to have an idea of how to //implement it, otherwise, I’ll look back over it all later
 // VAR music = “”
 #background: purplesunset.jpg
 #time: 7:45 PM
