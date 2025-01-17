@@ -1,3 +1,5 @@
+TODO add more tie ins to the blinking radio tower light
+	Matt, feel free to rewrite bits of my sections if you happen to have an idea of how to implement it, otherwise, I’ll look back over it all later
 // VAR music = “”
 #background: purplesunset.jpg
 #time: 7:45 PM
@@ -60,7 +62,9 @@ You nod, {vibeOutside:and accept her hand to help yank you up off the ground, }t
 
 {vibeOutside:You sit back down on your blanket|You perch on the cooler}, and Heather lounges back on {vibeOutside:her own|her blanket} next to you.
 
-“Do you remember our first time out here?” she asks.
+The two of you just sit together for a few moments, the only sound coming from the wind blowing through the field of corn. 
+
+“Do you remember our first time out here?” Heather asks, almost dreamily.
 
 You nod. It was years ago, back in grade school, but you still remember it like it was yesterday.	
 
@@ -180,16 +184,16 @@ After a moment, you hear the trunk slam closed, and she comes back around carryi
 You glance at Taylor first, who shrugs, then choose…
 
 *[Bright Eyes]
-// ~music = “Bright Eyes”
+~music = “Bright Eyes”
 #playonce: BrightEyes.mp3 >> volume: 0.3
 *[Weezer]
-// ~music = “Weezer”
+~music = “Weezer”
 #playonce: Weezer.mp3 >> volume: 0.3
 *[Paramore]
-// ~music = “Paramore”
+~music = “Paramore”
 #playonce: Paramore.mp3 >> volume: 0.2
 *[Taylor Swift]
-// ~music = “Taylor Swift”
+~music = “Taylor Swift”
 #playonce: TaylorSwift.mp3 >> volume: 0.2
 -
 TODO figure out if we’re doing a randomized album function or background music
@@ -201,9 +205,9 @@ You’ve technically known Taylor for a while, but it was only last year that He
 
 *[Taylor’s car has broken down, and Heather offered her a ride.]
 -> carTroubles
-*The four of you were in drama club together.
+*[The four of you were in drama club together.]
 -> dramaClub
-*You and Taylor always lagged behind “running” laps in gym.
+*[You and Taylor always lagged behind “running” laps in gym.]
 	->gymBuds
 
 == carTroubles ==
@@ -216,28 +220,37 @@ She was on her way to work at Joe’s Diner, and couldn’t afford to miss a shi
 
 Heather offered to drive her to work and even picked her up after her shift. She was still stressed, though, so {transferStudent:like she had done for you years before,} Heather took her to your secret spot to unwind.
 
+After that, Heather started inviting her out more, and introduced her to Sam. She wasn’t able to come around as often since she worked probably more than what was legally allowed, but she quickly became a natural part of your group of friends.
+
 TIME WILL ADVANCE #class: timeWarning
 * [Continue]
 	-> bobbyAndSamArrive
 
 == dramaClub ==
-TODO
 The bonds forged in drama club are not ones easily broken. You, Heather, and Sam all joined together since Freshman year, but it wasn’t until last year that Taylor joined.
 
 You remember the air of silent surprise when she showed up to the first meeting of the year. She’s always been, well, not <i>shy</i> necessarily, but certainly quiet. Reserved. Definitely not the sort of person you’d expect to take to the stage.
 
 She had noticed the off mood of the room and seemed uncomfortable enough that she might leave, but Heather had smiled and waved her over and asked what sort of parts she was excited to play.
 
-She just shrugged. “Whatever’s left. Or just set design.”
+The answer ended up being “lead.”
 
-That was novel. A
+After the extremely successful run of the first semester’s play, you, Heather, and Sam invited Taylor out to your secret spot to celebrate. That’s when she, more than a little high by this point, explained that the secret behind her unexpected passion for acting, was you always had a script when you were on stage. You knew what to say. You knew how others would respond. No room for miscommunications.
+
+That was something the three of us understood.
+
+She started coming back with us when the club let out after that. And as with joining the club, she quickly became a natural part of your group of friends.
 
 TIME WILL ADVANCE #class: timeWarning
 * [Continue]
 	-> bobbyAndSamArrive
 
 == gymBuds ==
-TODO
+Listen, it doesn’t matter how much of an athletic person you are, what matters is that you do not see the point of spending almost every gym class running laps. Sure, your tiny school can’t afford any fancy equipment, and Coach Barnes is also the basketball coach and acts like anyone not on the team will taint the court somehow, but there has to be <i>something</i> more to do than laps and dodgeball.
+
+Thus, after you spent the first month of junior year realizing there was <i>not</i> anything else for you to do, you started to slowly lag behind until eventually you basically just walked the required laps. Sam would make goofy faces at you each time he passed, while Heather would sometimes slow down to chat, though she genuinely enjoyed running, so wouldn’t stay for long. That left you and Taylor, who had stuck to walking her laps from the start.
+
+She wasn’t much of a conversationalist. Not shy, necessarily, just reserved. Not too keen on small talk. But you can’t spend the majority of a semester walking next to someone without chatting a bit, and the two of you ended up hitting it off. After she started sitting with you, Heather, and Sam at lunch, Heather invited her out to your secret spot. She fit in with the three of you naturally, and though she still wasn’t much of a talker, you’re happy she’s become a part of your group of friends.
 
 TIME WILL ADVANCE #class: timeWarning
 * [Continue]
@@ -374,6 +387,7 @@ Bobby rubs his hands together.
 <br>
 “Cool,” he smiles back.
 *[Continue]
+
 -
 
 You look around the group. Taylor is still focused on her drawings. Sam lays back and stares up at the radio tower. Beside you, Heather lights the joint and takes the first hit. Bobby is looking around, and for the first time, you think he looks kind of uncomfortable.
@@ -387,13 +401,67 @@ TIME WILL ADVANCE. #class: timeWarning
 
 == taylor1 ==
 TODO
+//Taylor takes drink, but it’s clear she needs time to settle in before you can try talking again, so the player can either push for conversation or come back later
+//OR
+//gosh dangit what was my “or” I forgot it in the middle of typing
+->roundTwo
 == heather1 ==
 TODO
+//heather asks you about your plans after school
+->roundTwo
 == bobby1 ==
 TODO
+
+->roundTwo
 == sam1 ==
 TODO
+//either PC asks sam about bobby or sam asks PC what they think about bobby
+->roundTwo
 
+==roundTwo==
+#clear
+#image: blinking.gif # class: blinking
+#time: 9:32 PM
+//new description of group
+//I forget which character we said would have to leave early but this gets mentioned here
+
+-(convoChoice2)
+*[Taylor]
+	->taylor2
+*[Heather]
+	->heather2
+*[Sam]
+	->sam2
+*[Bobby]
+	->bobby2
+
+
+== taylor2 ==
+TODO
+//Taylor doesn’t have anything to say if PC pushed for convo before.
+	->convoChoice2
+//Taylor is relaxed enough to chat
+	->finalRound
+== heather2 ==
+TODO
+//if talked to heather last time, you have the option to talk about one of the other characters with her
+//possibly another way to keep our scope limited but let the player not completely neglect a character?
+->finalRound
+== bobby2 ==
+TODO
+
+->finalRound
+== sam2 ==
+TODO
+
+->finalRound
+
+== finalRound ==
+#clear
+#image: blinking.gif # class: blinking
+#time: 10:28 PM
+//whatever character is about to leave, and Heather makes her “we’ll all come back in ten years” speech
+//maybe option to include character you haven’t talked to in conversation? We’d need 4 rounds to be able to talk to everyone once
 
 
 
@@ -403,9 +471,4 @@ TODO
     -> END
 
 
-// ===function getAlbum() ===
-// {music == “Bright Eyes”:
-// 	~return “{~Cassadaga|Digital Ash in a Digital Urn|I’m Wide Awake, It’s Morning|Lifted or The Story Is in the Soil, Keep Your Ear to the Ground|Fevers and Mirrors|Letting Off the Happiness}
-// 	}
-// {music == “Weezer”:
-// 	~return “{~Blue Album|Pinkerton|the Green Album|Maldroit|Make Believe|the Red Album
+
