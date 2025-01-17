@@ -195,6 +195,7 @@ You glance at Taylor first, who shrugs, then choose…
 *[Taylor Swift]
 // ~music = “Taylor Swift”
 #playonce: TaylorSwift.mp3 >> volume: 0.2
+
 -
 TODO figure out if we’re doing a randomized album function or background music
 TODO add descriptions of what you’re listening to
@@ -420,7 +421,21 @@ TODO
 //heather asks you about your plans after school
 ->roundTwo
 == bobby1 ==
-TODO
+“Looking for something?” you say to Bobby. It’s clear you’ve startled him.
+
+“Uhhhh…honestly, I’m just feeling kind of out of place,” he says. Even when he’s feeling awkward he still has the confidence to admit it. {bobbyRich: Is that a rich kid thing?}
+
+“Well, there’s nothing in all this corn that’s gonna hurt you, if that’s what you’re worried about.”
+
+Bobby laughs. The two of you sit in silence for a bit. The two of you come from completely different worlds despite both having grown up in a place like this. There’s a question forming in your throat, and it escapes before you can think to stop it.
+
+“Why did you come out here with us tonight anyway? Aren’t all your friends at Liz Br–”
+
+As you choke on the word, Bobby smiles and looks at the ground. {bobbyGirlfriend:Liz and Bobby are so similar. It must have been something bad to break them up, and now you reminded him of it.|Liz Brown was Bobby’s girlfriend until a few months ago.}
+
+“Yeah. That’s why.” He turns away, staring out at the darkness again. You swallow and look the other direction.
+
+“Besides,” Bobby says, facing towards the others now. “Not all my friends are there.”
 
 ->roundTwo
 == sam1 ==
@@ -434,9 +449,12 @@ TODO
 #time: 9:32 PM
 //new description of group
 //I forget which character we said would have to leave early but this gets mentioned here
+// Matt: I think the only one that makes sense is Taylor since bobby and sam arrived together
 -> convoChoice2
+
 = convoChoice2
 *[Taylor]
+// interesting thing here. If the player didn’t choose taylor1 but chooses taylor2, they skip the pushing/not pushing interaction. How do we want to account for that?
 	->taylor2
 *[Heather]
 	->heather2
@@ -456,10 +474,32 @@ TODO
 TODO
 //if talked to heather last time, you have the option to talk about one of the other characters with her
 //possibly another way to keep our scope limited but let the player not completely neglect a character?
+// OOO i like this. Maybe even a conversation with that person. 
 ->finalRound
-
 == bobby2 ==
-TODO
+// description of going to be next to bobby. Relies on roundtwo description
+“So, how did you and Sam start hanging out, anyway?” you ask.
+
+Bobby seems confused.
+“What do you mean?” he says, taking a drink.
+
+“I mean, we’ve been going to school together for forever, but you weren’t really friends before.”
+
+He wipes his mouth.
+“You were there. That first day he invited me to eat with you guys. It was right after me and Liz broke up{bobbyBasketball:, and the rest of the team was on a trip I had to skip for my parents’ business}. He saw me walking alone to the cafeteria and started talking to me like we were best friends.”
+
+You look over at Sam. He and Heather are laying on the ground looking up at the tower, pointing at something. They’re probably completely baked.
+
+“That sounds like Sam. I’m gonna miss him.”
+
+“Are you going somewhere?”
+
+* “School. Just state school, but it’s still far enough away we won’t see each other much.”
+* “Anywhere but here.”
+* “I don’t know yet.”
+-
+
+“I get it.{bobbyBasketball: I’ll miss him too.}”
 
 ->finalRound
 == sam2 ==
@@ -473,6 +513,8 @@ TODO
 #time: 10:28 PM
 //whatever character is about to leave, and Heather makes her “we’ll all come back in ten years” speech
 //maybe option to include character you haven’t talked to in conversation? We’d need 4 rounds to be able to talk to everyone once
+// MATT: I think it could be cool here for people to start packing up and the last convo could be whoever you decide to ride home with. Now that I type that out, you’d probably ride home with heather. Maybe that’s an opportunity for some more choices that are about people rather than with them?
+// Also Matt: I’m not as married to talking to everyone. I think we can make it work no matter what. But if it’s important to you or it will make the 2nd half easier, we can add a fourth.
 
 
 
