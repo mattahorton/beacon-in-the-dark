@@ -184,16 +184,16 @@ After a moment, you hear the trunk slam closed, and she comes back around carryi
 You glance at Taylor first, who shrugs, then choose…
 
 *[Bright Eyes]
-~music = “Bright Eyes”
+// ~music = “Bright Eyes”
 #playonce: BrightEyes.mp3 >> volume: 0.3
 *[Weezer]
-~music = “Weezer”
+// ~music = “Weezer”
 #playonce: Weezer.mp3 >> volume: 0.3
 *[Paramore]
-~music = “Paramore”
+// ~music = “Paramore”
 #playonce: Paramore.mp3 >> volume: 0.2
 *[Taylor Swift]
-~music = “Taylor Swift”
+// ~music = “Taylor Swift”
 #playonce: TaylorSwift.mp3 >> volume: 0.2
 -
 TODO figure out if we’re doing a randomized album function or background music
