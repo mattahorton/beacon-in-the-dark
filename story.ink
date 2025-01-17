@@ -291,7 +291,7 @@ Heather rolls her eyes and laughs.
 == samPokemon ==
 “Glad you made it. By the way, Sam, just in case I never see you again. You ever gonna give me back my foil Blastoise?” you say.
 
-“<i>Hell</> no! We made that trade fair and square. Besides we were 9.”
+“<i>Hell</i> no! We made that trade fair and square. Besides we were 9.”
 
 “Fair’s pushing it. You gave me a Charmander,” you say while chuckling. “But I just wanted to mess with you.”
 -> bobbyIntro
@@ -427,7 +427,7 @@ TODO
 
 “Well, there’s nothing in all this corn that’s gonna hurt you, if that’s what you’re worried about.”
 
-Bobby laughs. The two of you sit in silence for a bit. The two of you come from completely different worlds despite both having grown up in a place like this. There’s a question forming in your throat, and it escapes before you can think to stop it.
+Bobby laughs. The two of you sit in silence for a bit. You come from completely different worlds despite both having grown up in a place like this. There’s a question forming in your throat, and it escapes before you can think to stop it.
 
 “Why did you come out here with us tonight anyway? Aren’t all your friends at Liz Br–”
 
@@ -436,7 +436,7 @@ As you choke on the word, Bobby smiles and looks at the ground. {bobbyGirlfriend
 “Yeah. That’s why.” He turns away, staring out at the darkness again. You swallow and look the other direction.
 
 “Besides,” Bobby says, facing towards the others now. “Not all my friends are there.”
-
+* [Continue]
 ->roundTwo
 == sam1 ==
 TODO
@@ -450,9 +450,11 @@ TODO
 //new description of group
 //I forget which character we said would have to leave early but this gets mentioned here
 // Matt: I think the only one that makes sense is Taylor since bobby and sam arrived together
+
 -> convoChoice2
 
 = convoChoice2
+TIME WILL ADVANCE. #class: timeWarning
 *[Taylor]
 // interesting thing here. If the player didn’t choose taylor1 but chooses taylor2, they skip the pushing/not pushing interaction. How do we want to account for that?
 	->taylor2
@@ -486,7 +488,9 @@ Bobby seems confused.
 “I mean, we’ve been going to school together for forever, but you weren’t really friends before.”
 
 He wipes his mouth.
-“You were there. That first day he invited me to eat with you guys. It was right after me and Liz broke up{bobbyBasketball:, and the rest of the team was on a trip I had to skip for my parents’ business}. He saw me walking alone to the cafeteria and started talking to me like we were best friends.”
+“You were there. That first day he invited me to eat with you guys. Liz and me were fighting{bobbyBasketball:, and the rest of the team was on a trip I had to miss for a family thing}. He saw me walking alone to the cafeteria and started talking to me like we were best friends.
+
+“Then, a couple weeks later, I realized we actually were.”
 
 You look over at Sam. He and Heather are laying on the ground looking up at the tower, pointing at something. They’re probably completely baked.
 
@@ -495,8 +499,8 @@ You look over at Sam. He and Heather are laying on the ground looking up at the 
 “Are you going somewhere?”
 
 * “School. Just state school, but it’s still far enough away we won’t see each other much.”
-* “Anywhere but here.”
-* “I don’t know yet.”
+* “Anywhere but here. Either way, we won’t see each other much.”
+* “I don’t know yet, honestly.”
 -
 
 “I get it.{bobbyBasketball: I’ll miss him too.}”
@@ -516,6 +520,79 @@ TODO
 // MATT: I think it could be cool here for people to start packing up and the last convo could be whoever you decide to ride home with. Now that I type that out, you’d probably ride home with heather. Maybe that’s an opportunity for some more choices that are about people rather than with them?
 // Also Matt: I’m not as married to talking to everyone. I think we can make it work no matter what. But if it’s important to you or it will make the 2nd half easier, we can add a fourth.
 
+TIME WILL ADVANCE. #class: timeWarning
+
+* [Bobby]
+-> bobby3
+* [Sam]
+-> sam3
+* [Heather]
+-> heather3
+
+== bobby3 ==
+Before you can say anything, Bobby touches your shoulder with a quiet urgency.
+
+“Walk with me?”
+
+He looks pained.
+
+“Sure.”
+
+He leads you past the cars into the real darkness. Away from Heather’s headlights, down the road through the corn field. He stops, turns back to you, and hesitates.
+
+* “You good?”
+* You wait for him to speak.
+-
+“Me and Liz broke up because she was jealous.”
+
+You’re not sure why this warranted a private conversation, but there must be more to this story.
+“Jealous of who?”
+
+“We started hanging out, and we were spending all this time together, and when she’d get mad I’d go over to Sam’s place which would just make it–”
+
+“Wait. Sam? She was jealous of Sam? I mean, that’s crazy. Liz has friends too.”
+
+“Yeah, but…” he pauses, closes his eyes, and straightens up. Suddenly the confidence you know Bobby for is back.
+
+“I don’t think she was wrong.”
+
+That had never crossed your mind.
+
+"Oh. You mean…”
+“Yeah.”
+
+“Does Sam know?”
+Bobby is looking down at the ground again and you lean your head forward a bit, trying to get into his line of sight.
+
+“I mean…I have no idea. It’s not even something I even realized until like…yesterday.”
+
+You walk towards him and put your hand on his shoulder. He’s <i>really</i> tall. You have to stretch.
+
+“Hey. Sam can be real stupid sometimes, but he’s also maybe the nicest person I know. Even if he’s…not thinking the same thing, I promise it’s gonna be cool.”
+
+Still looking at the ground, Bobby smiles.
+
+“Hey there you guys are!” yells Sam. He’s walking towards you from where the cars are. “What’s going on? Everything OK?”
+
+Bobby’s himself again.
+“Yeah, we were just getting away from the lights to see more stars.”
+
+“Well you better get back here and keep Heather busy. She’s trying to get me to talk about my feelings again,” he shudders.
+
+You and Bobby laugh and walk back to the tower with Sam.
+
+*[Continue]
+-> firstHalfWrap
+
+== sam3 ==
+*[Continue]
+-> firstHalfWrap
+
+== heather3 ==
+*[Continue]
+-> firstHalfWrap
+
+== firstHalfWrap ==
 
 
 
