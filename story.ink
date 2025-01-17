@@ -400,6 +400,16 @@ TIME WILL ADVANCE. #class: timeWarning
 * [Go lay next to Sam.] -> sam1
 
 == taylor1 ==
+“Hey, Taylor,” you say and wave for her attention.
+
+“What’s up?” she says without looking at you.
+
+“You want a drink? We got water or…looks like it’s just water or beer.”
+
+Taylor looks up at you. “Yeah. Water would be nice. Thanks.”
+
+You hand Taylor her water and she goes back to drawing in her notebook.
+
 TODO
 //Taylor takes drink, but it’s clear she needs time to settle in before you can try talking again, so the player can either push for conversation or come back later
 //OR
@@ -424,8 +434,8 @@ TODO
 #time: 9:32 PM
 //new description of group
 //I forget which character we said would have to leave early but this gets mentioned here
-
--(convoChoice2)
+-> convoChoice2
+= convoChoice2
 *[Taylor]
 	->taylor2
 *[Heather]
@@ -439,7 +449,7 @@ TODO
 == taylor2 ==
 TODO
 //Taylor doesn’t have anything to say if PC pushed for convo before.
-	->convoChoice2
+	->roundTwo.convoChoice2
 //Taylor is relaxed enough to chat
 	->finalRound
 == heather2 ==
@@ -447,6 +457,7 @@ TODO
 //if talked to heather last time, you have the option to talk about one of the other characters with her
 //possibly another way to keep our scope limited but let the player not completely neglect a character?
 ->finalRound
+
 == bobby2 ==
 TODO
 
