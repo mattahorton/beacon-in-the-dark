@@ -137,7 +137,15 @@ a:hover
 {
 	font-size: 28pt;
 	font-weight: 800;
-	color: red;
+	color: white;
+	-webkit-text-stroke: 1px black;
+	background-color: #111111DD;
+	padding: 10px 20px;
+}
+
+.timeTextLate {
+	background-color: transparent !important;
+	color: red !important;
 }
 
 #controls

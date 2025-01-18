@@ -56,8 +56,15 @@ Patches.add(function () {
 });
 
 Tags.add("time", function(story, time) {
+	// this code is so ugly. Go away.
 	// set story time
+	let property = getTagOptions(time);
+	
 	story.time = time;
 	let timeText = document.getElementById("timeText");
 	timeText.innerText = story.time;
+
+	if (property.value && ((parseInt(property.value[0][0]) >= 8) && (parseInt(property.value[0][1]) >= 30)) || (parseInt(property.value[0][0]) > 9) ) {
+		timeText.classList.add('timeTextLate');
+	}
 });
