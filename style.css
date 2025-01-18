@@ -191,6 +191,26 @@ p.image img {
     max-width:100%;
 }
 
+p.title > span > p {
+	font-size: 72pt !important;
+	font-weight: bolder !important;
+	line-height: normal;
+	margin-bottom: 0;
+}
+
+p.subtitle > span > p {
+	color: gray !important;
+	font-weight: light !important;
+	margin-top: 0;
+	margin-bottom: 100px;
+}
+
+.choice.titlechoice {
+	margin-top: 100px;
+	margin-bottom: 0;
+}
+
+
 /* ================================================================= */
 /* PATCH SPECIFIC CSS                                                */
 /* ================================================================= */
@@ -204,7 +224,7 @@ p.image img {
 	height: calc(100vw * 0.2);
 	overflow: hidden;
 	position: relative;
-}p
+}
 
 .frameLayer
 {

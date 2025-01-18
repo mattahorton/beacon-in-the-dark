@@ -1,6 +1,13 @@
-TODO add more tie ins to the blinking radio tower light
-	//Matt, feel free to rewrite bits of my sections if you happen to have an idea of how to //implement it, otherwise, I’ll look back over it all later
 VAR music = ""
+The Spot #class: title
+#delay: 1000
+by Jackie & Matt #class: subtitle
+#delay: 1000
+* [Begin] 
+-> setup
+
+== setup ==
+#clear
 #background: purplesunset.jpg
 #time: 7:45 PM
 #play: CornField2PM.mp3 >> volume: 0.2
@@ -307,10 +314,10 @@ You give her a questioning look. “What? We don’t have any more.”
 
 * {vibeOutside} “We can make room[.”],” you say, half directing it at Heather.
 	-> bobbyBlanket
-* “Uh…Sorry. I would’ve brought more[.”],” you say.
+* “Yeah…Sorry. I would’ve brought more[.”],” you say.
 	-> bobbyTailgate
-* {anxiousTruck} [You pretend not to hear him.]
-	-> bobbyIgnore
+* {anxiousTruck} [You remember you forgot to grab yours out of your truck.]
+	-> bobbyForgot
 
 == bobbyTailgate ==
 “That’s alright. Got a seat right here.”
@@ -318,13 +325,12 @@ Bobby lets his tailgate down and hops up on the bed, putting his backpack behind
 -> backToBobby
 
 == bobbyBlanket ==
+Heather smiles tightly as you both move to make room.
 “Oh, thanks,” he says, setting a backpack down on the ground. Sam and Bobby join you on the blankets.
 -> backToBobby
 
-== bobbyIgnore ==
-You don’t know what to say, so you do your best to act like you didn’t hear him.
-“We’ll make room for you, Bobby,” says Heather, who knows exactly what you're doing. “Glad you made it.”
-Taylor and Heather scoot closer to the radio tower, and Sam and Bobby sit down on their blankets. Taylor’s blanket is kind of small, you think. Sam might as well be sitting in the grass.
+== bobbyForgot ==
+Taylor moves her folding chair a little farther away to make room for the blanket you grab out of your truck and unfurl on the grass between her and Heather. You always made sure to grab a larger one since Sam usually forgot to bring anything for himself, but Sam and Bobby sit close enough next to each other that you can fit comfortably on the overlap between it and Heather’s.
 -> backToBobby
 
 == backToBobby ==
@@ -617,8 +623,8 @@ TODO
 
 
 
-- else:
-TODO
+else:
+
 	}
 ->finalRound
 == bobby2 ==
@@ -814,6 +820,10 @@ Both of you laugh, and Sam shakes his arms out like that will do anything to hel
 -> firstHalfWrap
 
 == firstHalfWrap ==
+#clear
+10 Years Later #class: title
+#delay: 5000
+#background: RoadDusk.jpg
 
 
 
