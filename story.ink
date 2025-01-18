@@ -894,13 +894,43 @@ Both of you laugh, and Sam shakes his arms out like that will do anything to hel
 #clear
 #background: RoadDusk.jpg
 {#playonce: {music}.mp3 >> volume: 0.3|}
+VAR heatherLivesWithPC = false
 VAR heatherWithPC = false
-~ heatherWithPC = (heather1 && heather2 && heather3) || (((heather1 && heather2) || (heather1 && heather3) || (heather2 && heather3)) && heather1.heatherNotForever)
+~ heatherLivesWithPC = (heather1 && heather2 && heather3) || (((heather1 && heather2) || (heather1 && heather3) || (heather2 && heather3)) && heather1.heatherNotForever)
+~ heatherWithPC = heatherLivesWithPC || heather1 || heather2 || heather3
 
-It’s been a few years since you came back home, but it’s been almost 10 years since you drove down this exact stretch of country road. They repaved it since then.{heatherWithPC: In the passenger seat, Heather looks up from her phone and stares at the purple-ish sunset.}
+It’s been a few years since you came back home, but it’s been almost 10 years since you drove down this exact stretch of country road. They repaved it since then.{heatherLivesWithPC: In the passenger seat, Heather looks up from her phone and stares at the purple-ish sunset.}
 
-{heatherWithPC:“I forgot just how beautiful it can look out here.”}
+{heatherLivesWithPC: “I forgot just how beautiful it can look out here.”}
 
+You’re here because of Heather. After the night of graduation, everyone out at your secret spot took the promise you made pretty seriously. For several years, any time you saw one of them, the promise to meet back at the spot in 10 years came up. Over time you talked about it less, but about a year ago, Sam started a group chat with the 5 of you, and the planning got serious.
+
+{not heatherLivesWithPC && heatherWithPC: You and Heather made plans to meet up at her parents’ and drive to the spot together. You ended up in different cities after high school, but you were as close as ever, having spent holidays together and traveled together several times.}
+
+{not heather1 && not heather2 && not heather3: It’s been a while since you heard from Heather. You kept up after high school for a bit, but it’s hard to maintain friendships with your high school friends. Still, you weren’t about to break a promise to her.}
+
+{heatherLivesWithPC:->heatherAndPC}
+
+-> arriveAtSpot
+
+== heatherAndPC ==
+You and Heather ended up in the same city after high school. She went to college there.
+* You took some time to figure out your plans.
+* You were lucky to get in too considering how late you applied.
+-
+* Ever since then, you’d been roommates.
+* Ever since then, you’d been dating.
+-<> You were living the dream, never having to be away from your best friend.
+
+-> arriveAtSpot
+
+== arriveAtSpot ==
+TODO
+#clear
+
+{heatherWithPC:"We're getting close, I think. It looks different out here."}
+
+{heatherWithPC: She's right. }It looks way different out here. For one, there's a big metal fence on the side of the road where the radio tower is. You don't know how long it goes, but as you round a corner, you can see the tower off in the distance. At least there's one thing that's familiar.
 
 
 -
