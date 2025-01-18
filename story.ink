@@ -3,6 +3,8 @@ The Spot #class: title
 #delay: 1000
 by Jackie & Matt #class: subtitle
 #delay: 1000
+#cleartime
+#background: none.jpg
 * [Begin] 
 -> setup
 
@@ -611,7 +613,7 @@ Taylor snorts. “That’s certainly one way to look at it.” She waves off you
 An inscrutable expression passes over her face, before it settles back on neutral. “I’ve just got a lot on my mind, I guess,” she says with a shrug. “Graduation night and everything.”
 
 	You nod, ignoring the feeling there’s something more bugging Taylor than just graduation. If she wants to tell you, she will. In her own time.
-
+* [Continue]
 ->finalRound
 }	
 
@@ -820,9 +822,18 @@ Both of you laugh, and Sam shakes his arms out like that will do anything to hel
 -> firstHalfWrap
 
 == firstHalfWrap ==
+* [Continue]
+-> secondHalf
+
+== secondHalf ==
 #clear
+#delay: 1000
 10 Years Later #class: title
-#delay: 5000
+#time:
+* [Continue]
+-> secondHalfIntro
+
+== secondHalfIntro ==
 #background: RoadDusk.jpg
 
 

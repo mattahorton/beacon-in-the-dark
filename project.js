@@ -68,3 +68,9 @@ Tags.add("time", function(story, time) {
 		timeText.classList.add('timeTextLate');
 	}
 });
+
+Tags.add("cleartime", function(story) {
+	// clear story time
+	let timeText = document.getElementById("timeText");
+	timeText.innerText = "";
+});
