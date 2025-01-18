@@ -302,7 +302,10 @@ Heather rolls her eyes and laughs.
 -
 Unlike Sam, Bobby is new. At least to this group. 
 “Hey,” he says, looking directly at you in a way that’s kind of intimidating. “Got any more blankets?”
-* {vibeOutside} “Yeah, sure. We can make room[.”],” you say.
+{anxiousTruck:Heather gestures to you sitting on the cooler. “All out,” she says before you can open your mouth.|Before you can say anything, Heather says, “We didn’t think we’d need to bring extras.”}
+You give her a questioning look. “What? We don’t have any more.”
+
+* {vibeOutside} “We can make room[.”],” you say, half directing it at Heather.
 	-> bobbyBlanket
 * “Uh…Sorry. I would’ve brought more[.”],” you say.
 	-> bobbyTailgate
@@ -450,7 +453,7 @@ You look around at the field swaying softly in the breeze. As the sunlight conti
 ->heatherNotForever
 *”It’s like when you finish a really good book[.”],” you say. <>
 ->heatherBook
-= heatherNotForever 
+= heatherNotForever
 “Our families still live here, even if we leave. The tower isn’t going anywhere.”
 
 Heather smiles kind of sadly. “It won’t be all of us though, you know? You, me, Sam, and Heather.” She glances at Bobby and takes a hit of the joint. “And Bobby, I guess.”
@@ -468,7 +471,7 @@ Maybe she was right. Maybe this just isn’t something you can recapture. But ma
 
 “But it’s not the same, is it? You can never capture the same feeling of reading it for the first time.”
 
-Heather takes a hit of the joint, exhaling slowly. “It was a fucking good book.”
+Heather takes a hit of the joint, exhaling slowly. “It was a good fucking book.”
 ->roundTwo
 == bobby1 ==
 #clear
@@ -546,6 +549,7 @@ You lean up a little and try to look at Bobby without him noticing.
 Sam lays back on his back, staring back at the red light again.
 “Yeah. It is.”
 
+* [Continue]
 ->roundTwo
 
 ==roundTwo==
@@ -586,7 +590,7 @@ TODO
 You try to hide how hurt you feel, and move to talk to someone else.
 ->roundTwo.convoChoice2
 
-- else:
+else:
 You turn to Taylor and raise your eyebrows in the universal sign for, “You good?” {taylor1:She <i>does</i> seem more relaxed than before, at least, and not just because of the beer.} 
 
 She shrugs with a smile, the universal sign for, “Yeah, I’m doing alright,” then looks behind you and tilts her head, the universal sign for, “So what’s up with that?”
@@ -608,8 +612,14 @@ An inscrutable expression passes over her face, before it settles back on neutra
 	
 == heather2 ==
 TODO
-//if talked to heather last time, you have the option to talk about one of the other characters with her
-// OOO i like this. Maybe even a conversation with that person. 
+{heather1:
+	
+
+
+
+else:
+
+	}
 ->finalRound
 == bobby2 ==
 You wave to Bobby.
@@ -688,9 +698,13 @@ You haven’t even told him if you’re leaving or not. It doesn’t matter.
 #clear
 #image: blinking.gif # class: blinking
 #time: 10:28 PM
-//whatever character is about to leave, and Heather makes her “we’ll all come back in ten years” speech
-//maybe option to include character you haven’t talked to in conversation? We’d need 4 rounds to be able to talk to everyone once
-// Also Matt: I’m not as married to talking to everyone. I think we can make it work no matter what. But if it’s important to you or it will make the 2nd half easier, we can add a fourth.
+
+As the last track finishes on the album Heather picked out, everyone gets quiet. {heather2:The game of Never Have I Ever ends with Bobby losing. Heather teases him for being “more adventurous than I thought.”|A spirited game of Never Have I Ever ends with Sam losing.}
+
+It’s been a great night. You’re glad you spent tonight with your friends rather than at some graduation party you’d just leave early anyway. It’s easier to get lost in a place like that than it is out here in the middle of nowhere.
+
+Taylor checks her watch and stands up to start gathering her things.
+“Wait!” Heather sounds almost panicked.
 
 TIME WILL ADVANCE. #class: timeWarning
 
