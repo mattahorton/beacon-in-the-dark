@@ -1,4 +1,5 @@
 VAR music = ""
+VAR artist = ""
 The Spot #class: title
 #delay: 1000
 by Jackie & Matt #class: subtitle
@@ -194,15 +195,19 @@ You glance at Taylor first, who shrugs, then choose…
 
 *[Bright Eyes]
 ~ music = "BrightEyes"
+~ artist = "Bright Eyes"
 #playonce: BrightEyes.mp3 >> volume: 0.3
 *[Weezer]
 ~ music = "Weezer"
+~ artist = "Weezer"
 #playonce: Weezer.mp3 >> volume: 0.3
 *[Paramore]
 ~ music = "Paramore"
+~ artist = "Paramore"
 #playonce: Paramore.mp3 >> volume: 0.2
 *[Taylor Swift]
 ~ music = "TaylorSwift"
+~ artist = "Taylor Swift"
 #playonce: TaylorSwift.mp3 >> volume: 0.2
 
 -
@@ -609,7 +614,6 @@ TIME WILL ADVANCE. #class: timeWarning
 }
 
 
-
 == taylor2 ==
 TODO
 {taylor1.taylorPush:
@@ -642,6 +646,7 @@ An inscrutable expression passes over her face, before it settles back on neutra
 	*[Continue]
 ->finalRound
 
+
 	
 == heather2 ==
 You get Heather’s attention as she comes back from the boombox, and lay back, patting the spot next to you.
@@ -649,12 +654,17 @@ You get Heather’s attention as she comes back from the boombox, and lay back, 
 	Heather does a little dance to the music as she heads over to you, and accidentally runs into Bobby in the process, who had gotten up to go to the cooler with Sam. Her face goes red. “Sorry, I wasn’t paying attention.”
 	Bobby smiles. “All good. I should have known to clear off the dance floor.”
 	Heather laughs a little sheepishly. “Actually, we were about to do our requisite stargazing,” she says, gesturing to you. “Care to join us?”
+	Bobby looks surprised, and smiles just a little wider. “Yeah, absolutely.”
+	Heather lays down next to you, and Bobby next to her.
+	“Do you know any constellations?” you ask.
+	“Yeah, Sam showed me some. There’s the big and little dippers.” You see his arm raised out the corner of your eye, but you don’t need to see where he’s pointing to find them. “And Virgo.
 
 
 	->finalRound
 - else:
 	-> heather1inHeather2
 	}
+
 
 == heather1inHeather2 ==
 TODO EDIT to make sense for heather2
@@ -694,6 +704,7 @@ Maybe she was right. Maybe this just isn’t something you can recapture. But ma
 Heather takes a hit of the joint, exhaling slowly. “It was a good fucking book.”
 *[Continue]
 ->finalRound
+
 
 == bobby2 ==
 You wave to Bobby.
@@ -856,7 +867,7 @@ You and Bobby laugh and walk back to the tower with Sam.
 == sam3 ==
 “We <i>gotta</i> go over to Bobby’s one night and play Rock Band. It’s like Guitar Hero, but it’s the whole band.” Sam moves his arms wildly, imitating each instrument. “He was telling me about it on the way here.{bobbyRich: Plus, his parents are loaded. The house is crazy.}”
 
-“That does sound fun. Do they have {music}?”
+“That does sound fun. Do they have {artist}?”
 
 Sam scoffs.
 “Probably. I don’t know why you like that stuff. You need to listen to <i>real</i> music,” he says before air guitaring in front of you. This isn’t the beer or the weed. This is just Sam.
@@ -1022,6 +1033,10 @@ That’s a good idea.
 - else:
 Who
 }
+
+
+
+
 
 -
     -> END
