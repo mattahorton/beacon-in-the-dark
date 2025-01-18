@@ -109,7 +109,7 @@ You roll your eyes. “That’s what you said then, too. I thought you were maki
 
 “Pure panic response. I spent the rest of the day trying to figure out how to get out of it. But you were determined.”
 
-“I was determined,” you agree. “TV taught me sharing secrets was the foundation of friendship, and I wanted more friends.”
+“I was determined,” you agree. “TV taught me that sharing secrets was the foundation of friendship, and I wanted more friends.”
 
 “And now you’re stuck with me,” Heather says proudly.
 
@@ -149,7 +149,7 @@ You ignore the interruption. “I thought we were going to do our work there, bu
 
 You both burst into laughter.
 
-“I just remember the look on Mrs. Fletcher’s face when we turned it in,” you say once your laughter calms down. “And then when our parents found out they’d have to split the bill in ordering a whole new set of encyclopedias, since the ones we used were out of print.”
+“I just remember the look on Mrs. Fletcher’s face when we turned it in,” you say once your laughter calms down. “And then when our parents found out they’d have to split the bill on ordering a whole new set of encyclopedias, since the ones we used were out of print.”
 
 “Still got a B, though,” Heather says.
 
@@ -200,9 +200,9 @@ You glance at Taylor first, who shrugs, then choose…
 TODO figure out if we’re doing a randomized album function or background music
 TODO add descriptions of what you’re listening to
 
-You pop in the cd and recline back on the {anxiousTruck:cooler|blanket}. Heather’s laying down with her eyes closed, while Taylor is doodling in a pocket notebook she always carries around.
+Heather pops in the CD, and the three of you just chill and listen as you wait for Sam to get here. It was like any other night when it was just the three of you – Heather eyes closed, humming along, you taking in the scenery, and Taylor doodling in a pocket notebook she always carries around.
 
-You’ve technically known Taylor for a while, but it was only last year that Heather invited her to come out here with you and Sam.
+It feels like the three of you have done this for years, but it was only last year that Heather invited Taylor out here for the first time.
 
 *[Taylor’s car has broken down, and Heather offered her a ride.]
 -> carTroubles
@@ -215,9 +215,10 @@ You’ve technically known Taylor for a while, but it was only last year that He
 You were with Heather on your way here, to what you both still called your secret spot, despite Sam being a part of the group by this point, when you noticed that rickety station wagon on the side of the road.
 
 You had seen Taylor by that point, of course. Everyone knows everyone in a town this size, and you shared a few classes together. She was quiet. Not shy, necessarily, just a bit withdrawn. Comfortable in her own world.
+
 You had never seen her as panicked as she was when you and Heather pulled over to see if you could offer any help.
 
-She was on her way to work at Joe’s Diner, and couldn’t afford to miss a shift on top of having no way to contact anyone about it. Even if she had had a cellphone, to say the signal is spotty around here would be an understatement.
+She was on her way to work at Joe’s Diner, and couldn’t afford to miss a shift on top of having no way to contact anyone about it. Even if she’d had a cellphone, to say the signal is spotty around here would be an understatement.
 
 Heather offered to drive her to work and even picked her up after her shift. She was still stressed, though, so {transferStudent:like she had done for you years before,} Heather took her to your secret spot to unwind.
 
@@ -236,7 +237,7 @@ She had noticed the off mood of the room and seemed uncomfortable enough that sh
 
 The answer ended up being “lead.”
 
-After the extremely successful run of the first semester’s play, you, Heather, and Sam invited Taylor out to your secret spot to celebrate. That’s when she, more than a little high by this point, explained that the secret behind her unexpected passion for acting, was you always had a script when you were on stage. You knew what to say. You knew how others would respond. No room for miscommunications.
+After the extremely successful run of the first semester’s play, you, Heather, and Sam invited Taylor out to your secret spot to celebrate. That’s when she, more than a little high by this point, explained that the secret behind her unexpected passion for acting was that you always had a script when you were on stage. You knew what to say. You knew how others would respond. No room for miscommunications.
 
 That was something the three of us understood.
 
@@ -249,7 +250,7 @@ TIME WILL ADVANCE #class: timeWarning
 == gymBuds ==
 Listen, it doesn’t matter how much of an athletic person you are, what matters is that you do not see the point of spending almost every gym class running laps. Sure, your tiny school can’t afford any fancy equipment, and Coach Barnes is also the basketball coach and acts like anyone not on the team will taint the court somehow, but there has to be <i>something</i> more to do than laps and dodgeball.
 
-Thus, after you spent the first month of junior year realizing there was <i>not</i> anything else for you to do, you started to slowly lag behind until eventually you basically just walked the required laps. Sam would make goofy faces at you each time he passed, while Heather would sometimes slow down to chat, though she genuinely enjoyed running, so wouldn’t stay for long. That left you and Taylor, who had stuck to walking her laps from the start.
+Thus, after you spent the first month of junior year realizing there was <i>not</i> anything else for you to do, you started to slowly lag behind until eventually you basically just walked the required laps. Sam would make goofy faces at you each time he passed, while Heather would sometimes slow down to chat, though she genuinely enjoyed running and wouldn’t stay for long. That left you and Taylor, who had stuck to walking her laps from the start.
 
 She wasn’t much of a conversationalist. Not shy, necessarily, just reserved. Not too keen on small talk. But you can’t spend the majority of a semester walking next to someone without chatting a bit, and the two of you ended up hitting it off. After she started sitting with you, Heather, and Sam at lunch, Heather invited her out to your secret spot. She fit in with the three of you naturally, and though she still wasn’t much of a talker, you’re happy she’s become a part of your group of friends.
 
@@ -376,7 +377,7 @@ Bobby rubs his hands together.
 
 “And Sam brings the weed,” says Heather, reaching out to take them from him.
 
-“Oh, you smoke?” Bobby asks you?
+“Oh, you smoke?” Bobby asks you.
 
 * “Nah. Not really.” -> pcDoesNotSmoke
 * “Sometimes.” -> pcSmokes
@@ -394,6 +395,7 @@ Bobby rubs his hands together.
 You look around the group. Taylor is still focused on her drawings. Sam lays back and stares up at the radio tower. Beside you, Heather lights the joint and takes the first hit. Bobby is looking around, and for the first time, you think he looks kind of uncomfortable.
 
 TIME WILL ADVANCE. #class: timeWarning
+-(convoChoice1)
 
 * [Offer Taylor a drink.] -> taylor1
 * [{pcSmokes:Ask Heather for the joint.|Turn to Heather.}] -> heather1
@@ -416,16 +418,27 @@ Taylor looks up at you. “Yeah. Water would be nice. Thanks.”
 You hand Taylor her water and she goes back to drawing in her notebook.
 
 TODO
-//Taylor takes drink, but it’s clear she needs time to settle in before you can try talking again, so the player can either push for conversation or come back later
-//OR
-//gosh dangit what was my “or” I forgot it in the middle of typing
-->roundTwo
+*[Give Taylor some space.]
+	->taylorSpace
+*[Ask Taylor about her post-graduation plans.]
+	->taylorPush
+	= taylorSpace
+Taylor clearly isn’t up for conversation right now. You aren’t the only one surprised by Bobby showing up, so it makes sense she’ll need a little bit longer to settle in. You’ll go talk to someone else.
+	->afterWeed.convoChoice1
+= taylorPush
+“So what’s next for you? College?{carTroubles: Or are you going to work at Joe’s for a while longer?}”
+Taylor shrugs and gives a non-commital grunt. She doesn’t look up from her drawing.
+You’ve spent enough time with Taylor to know this isn’t going to go anywhere. You’ll find someone else to talk to.
+	->afterWeed.convoChoice1
+
 == heather1 ==
 #clear
 #image: blinking.gif # class: blinking
 #time: 8:40 PM
 TODO
+
 //heather asks you about your plans after school
+
 ->roundTwo
 == bobby1 ==
 #clear
@@ -466,9 +479,7 @@ TODO
 //I forget which character we said would have to leave early but this gets mentioned here
 // Matt: I think the only one that makes sense is Taylor since bobby and sam arrived together
 
--> convoChoice2
-
-= convoChoice2
+-(convoChoice2)
 TIME WILL ADVANCE. #class: timeWarning
 *[Taylor]
 // interesting thing here. If the player didn’t choose taylor1 but chooses taylor2, they skip the pushing/not pushing interaction. How do we want to account for that?
@@ -483,8 +494,17 @@ TIME WILL ADVANCE. #class: timeWarning
 
 == taylor2 ==
 TODO
-//Taylor doesn’t have anything to say if PC pushed for convo before.
-	->roundTwo.convoChoice2
+{taylor1.taylorPush:
+	As you approach, Taylor seems to hunch even more over her notebook.
+
+“I’m not really in the mood. Sorry,” she says, not sounding terribly sorry.
+
+You try to hide the hurt on your face, and go talk to someone else.
+->roundTwo.convoChoice2
+
+- else:
+    todo
+}	
 //Taylor is relaxed enough to chat
 	->finalRound
 == heather2 ==
