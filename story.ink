@@ -590,7 +590,7 @@ TODO
 You try to hide how hurt you feel, and move to talk to someone else.
 ->roundTwo.convoChoice2
 
-else:
+- else:
 You turn to Taylor and raise your eyebrows in the universal sign for, “You good?” {taylor1:She <i>does</i> seem more relaxed than before, at least, and not just because of the beer.} 
 
 She shrugs with a smile, the universal sign for, “Yeah, I’m doing alright,” then looks behind you and tilts her head, the universal sign for, “So what’s up with that?”
@@ -617,8 +617,8 @@ TODO
 
 
 
-else:
-
+- else:
+TODO
 	}
 ->finalRound
 == bobby2 ==
