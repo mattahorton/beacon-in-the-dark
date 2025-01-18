@@ -914,7 +914,7 @@ You’re here because of Heather. After the night of graduation, everyone out at
 {not heather1 && not heather2 && not heather3: It’s been a while since you heard from Heather. You kept up after high school for a bit, but it’s hard to maintain friendships with your high school friends. Still, you weren’t about to break a promise to her.}
 
 {heatherLivesWithPC:->heatherAndPC}
-
+* [Continue]
 -> arriveAtSpot
 
 == heatherAndPC ==
