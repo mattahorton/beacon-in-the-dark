@@ -1,6 +1,6 @@
 TODO add more tie ins to the blinking radio tower light
 	//Matt, feel free to rewrite bits of my sections if you happen to have an idea of how to //implement it, otherwise, I’ll look back over it all later
-// VAR music = “”
+VAR music = ""
 #background: purplesunset.jpg
 #time: 7:45 PM
 #play: CornField2PM.mp3 >> volume: 0.2
@@ -184,16 +184,16 @@ After a moment, you hear the trunk slam closed, and she comes back around carryi
 You glance at Taylor first, who shrugs, then choose…
 
 *[Bright Eyes]
-// ~music = “Bright Eyes”
+~ music = "Bright Eyes"
 #playonce: BrightEyes.mp3 >> volume: 0.3
 *[Weezer]
-// ~music = “Weezer”
+~ music = "Weezer"
 #playonce: Weezer.mp3 >> volume: 0.3
 *[Paramore]
-// ~music = “Paramore”
+~ music = "Paramore"
 #playonce: Paramore.mp3 >> volume: 0.2
 *[Taylor Swift]
-// ~music = “Taylor Swift”
+~ music = "Taylor Swift"
 #playonce: TaylorSwift.mp3 >> volume: 0.2
 
 -
@@ -392,7 +392,7 @@ Bobby rubs his hands together.
 
 -
 
-You look around the group. Taylor is still focused on her drawings. Sam lays back and stares up at the radio tower. Beside you, Heather lights the joint and takes the first hit. Bobby is looking around, and for the first time, you think he looks kind of uncomfortable.
+You look around the group in the light of the low beams on Heather’s car. Taylor is still focused on her drawings. Sam lays back on a blanket and stares up at the radio tower. Beside you, Heather lights the joint and takes the first hit. Bobby is looking around, and for the first time, you think he looks kind of uncomfortable.
 
 TIME WILL ADVANCE. #class: timeWarning
 -(convoChoice1)
@@ -436,9 +436,39 @@ You’ve spent enough time with Taylor to know this isn’t going to go anywhere
 #image: blinking.gif # class: blinking
 #time: 8:40 PM
 TODO
+“It’s weird, isn’t it?” Heather asks{pcSmokes:, passing you the joint}.
 
-//heather asks you about your plans after school
+“What is?”
 
+“That we’re done. With school. With this place.”
+
+You look around at the field swaying softly in the breeze. As the sunlight continues to fade in the horizon, the field takes on an eerie red hue from the radio tower lights above you. It used to unnerve you, when you first came out here as a kid, but then it turned into something almost mystical. Like the world outside was gone, and it was just you and your friends illuminated by the slowly blinking light.
+
+{pcSmokes:You take a hit of the joint, the smoke of your exhale taking on that same mystical quality, then hand it back to Heather. }
+
+*”It doesn’t have to be forever[.”],” you say. <>
+->heatherNotForever
+*”It’s like when you finish a really good book[.”],” you say. <>
+->heatherBook
+= heatherNotForever 
+“Our families still live here, even if we leave. The tower isn’t going anywhere.”
+
+Heather smiles kind of sadly. “It won’t be all of us though, you know? You, me, Sam, and Heather.” She glances at Bobby and takes a hit of the joint. “And Bobby, I guess.”
+
+“And Bobby, apparently,” you agree.
+
+Maybe she was right. Maybe this just isn’t something you can recapture. But maybe you should try, anyway.
+
+*[Continue]
+->roundTwo
+= heatherBook
+“You close it for the last time, and there’s this feeling of loss. You had a great time reading it, and you’re glad you made it through, but now it’s done.”
+
+“You can reread books,” Heather points out.
+
+“But it’s not the same, is it? You can never capture the same feeling of reading it for the first time.”
+
+Heather takes a hit of the joint, exhaling slowly. “It was a fucking good book.”
 ->roundTwo
 == bobby1 ==
 #clear
@@ -461,64 +491,133 @@ As you choke on the word, Bobby smiles and looks at the ground. {bobbyGirlfriend
 
 “Besides,” Bobby says, facing towards the others now. “Not all my friends are there.”
 * [Continue]
+{
+- roundTwo && not finalRound:
+	-> finalRound
+- roundTwo && finalRound:
+	-> firstHalfWrap
+- else:
 ->roundTwo
+}
 == sam1 ==
 #clear
 #image: blinking.gif # class: blinking
 #time: 8:40 PM
 
-TODO
 //either PC asks sam about bobby or sam asks PC what they think about bobby
+You lay down next to Sam, shoulder to shoulder.
+
+“Hey nerd,” you say.
+
+“‘Sup, freak,” he pokes back, nudging you with his elbow.
+
+You both stare up to the top of the tower. The red light breathes steadily at the top. You watch it long enough for your eyes to unfocus.
+
+“What do you think it’s for?” you ask.
+
+“What?”
+
+“The light. Up there.”
+
+“Oh. It’s an aircraft obstruction light.” Sam doesn’t hesitate. “It’s to prevent airplanes from running into it.”
+
+You make a face he can’t see.
+“How the hell do you know that, Sam?”
+
+“My uncle’s a pilot. Sometimes he takes my dad and me up in his Cessna when we visit for Thanksgiving.”
+
+How had you never known this?
+“That’s really cool.”
+
+“Yeah. It’s cool as hell.”
+
+Sam hums along to the music and waves his hand in the air as if he were leaning out the car window. Then he turns on his side, lays his head on his elbow, and looks at you.
+
+“Hey, do you think Bobby is cool?”
+
+“Uh…I mean…”
+
+Sam corrects you before you can finish the thought.
+“Not like popular cool. Like…do you think he fits in with us?”
+
+You lean up a little and try to look at Bobby without him noticing.
+“I mean. I guess so. I don’t really know him well. I guess I’m still surprised he wants to hang out with us at all. That’s cool. I think.”
+
+Sam lays back on his back, staring back at the red light again.
+“Yeah. It is.”
+
 ->roundTwo
 
 ==roundTwo==
 #clear
 #image: blinking.gif # class: blinking
 #time: 9:32 PM
-//new description of group
-//I forget which character we said would have to leave early but this gets mentioned here
-// Matt: I think the only one that makes sense is Taylor since bobby and sam arrived together
+
+About half an hour ago, Bobby remembered a tarp he had in his cab. Now, all five of you are sprawled out on the ground drinking, listening to Taylor’s CDs, and talking about nothing. Well, Sam and Heather are wildly speculating about the next season of LOST. Heather’s been trying to get you to watch it with her for forever, but every time you try, you get too confused.
+
+“I’ve got to be home by 11,” Taylor says, looking back at the boombox. “Last call for music,” she nods to Heather before turning back to her notebook. Her parents are pretty strict, so she never gets to hang out as late. 
+
+Heather stands up and points into the air.
+“In that case!”
+
+She begins flipping furiously through the CDs binder again. You see Bobby chuckle, and Sam gets up to get another drink.
+
+-> convoChoice2
 
 -(convoChoice2)
 TIME WILL ADVANCE. #class: timeWarning
-*[Taylor]
-// interesting thing here. If the player didn’t choose taylor1 but chooses taylor2, they skip the pushing/not pushing interaction. How do we want to account for that?
+*[See how Taylor’s doing.]
 	->taylor2
 *[Heather]
 	->heather2
-*[Sam]
+*[Follow Sam to the cooler.]
 	->sam2
-*[Bobby]
+*[Get Bobby’s attention.]
 	->bobby2
 
 
 == taylor2 ==
 TODO
 {taylor1.taylorPush:
-	As you approach, Taylor seems to hunch even more over her notebook.
+	Taylor has stayed pretty quiet. You open your mouth to ask how she’s doing, but she interrupts you.
 
 “I’m not really in the mood. Sorry,” she says, not sounding terribly sorry.
 
-You try to hide the hurt on your face, and go talk to someone else.
+You try to hide how hurt you feel, and move to talk to someone else.
 ->roundTwo.convoChoice2
 
 - else:
-    todo
+You turn to Taylor and raise your eyebrows in the universal sign for, “You good?” {taylor1:She <i>does</i> seem more relaxed than before, at least, and not just because of the beer.} 
+
+She shrugs with a smile, the universal sign for, “Yeah, I’m doing alright,” then looks behind you and tilts her head, the universal sign for, “So what’s up with that?”
+
+You do your best to subtly look back{heather1 && pcSmokes:, made just a little bit more difficult as the effects of the pot continue to settle over you}. Sam has grabbed his water from the cooler and is bee-lining it back to Bobby. Heather has never looked more like a third wheel, especially not here.
+
+You shrug. “They’re in their friendship honeymoon phase. Sam was just as clingy with me back when we first met.”
+
+Taylor snorts. “That’s certainly one way to look at it.” She waves off your questioning look. “I guess it doesn’t really matter. Not tonight, at least. And maybe not after that.”
+“You’re being more cryptic than usual,” you tease.
+
+An inscrutable expression passes over her face, before it settles back on neutral. “I’ve just got a lot on my mind, I guess,” she says with a shrug. “Graduation night and everything.”
+
+	You nod, ignoring the feeling there’s something more bugging Taylor than just graduation. If she wants to tell you, she will. In her own time.
+
+->finalRound
 }	
-//Taylor is relaxed enough to chat
-	->finalRound
+
+	
 == heather2 ==
 TODO
 //if talked to heather last time, you have the option to talk about one of the other characters with her
-//possibly another way to keep our scope limited but let the player not completely neglect a character?
 // OOO i like this. Maybe even a conversation with that person. 
 ->finalRound
 == bobby2 ==
-// description of going to be next to bobby. Relies on roundtwo description
+You wave to Bobby.
+
 “So, how did you and Sam start hanging out, anyway?” you ask.
 
 Bobby seems confused.
-“What do you mean?” he says, taking a drink.
+“What do you mean?” he says, having just taken a drink.
 
 “I mean, we’ve been going to school together for forever, but you weren’t really friends before.”
 
@@ -527,7 +626,7 @@ He wipes his mouth.
 
 “Then, a couple weeks later, I realized we actually were.”
 
-You look over at Sam. He and Heather are laying on the ground looking up at the tower, pointing at something. They’re probably completely baked.
+You look over at Sam. He and Heather have laid down on the ground and are looking up at the sky, pointing at something. They’re probably completely baked.
 
 “That sounds like Sam. I’m gonna miss him.”
 
@@ -541,11 +640,48 @@ You look over at Sam. He and Heather are laying on the ground looking up at the 
 “I get it.{bobbyBasketball: I’ll miss him too.}”
 
 * [Continue]
+{
+	- finalRound:
+	-> firstHalfWrap
+- else:
 ->finalRound
+}
 
 == sam2 ==
-TODO
+There’s not much left in the cooler. Just a couple more beers and a few waters. You watch Sam pull out a water and open it.
 
+“Time to hydrate,” he gasps between swallows. He downs half the bottle right there. “Besides, I’ve got to work at the shop in the morning.”
+
+“That’s what you’re doing for the summer?” you ask.
+
+He pauses for a second like he’s deciding how to respond.
+“I think it’s what I’m gonna be doing for a while.”
+
+That makes sense, you think. His family has owned the combination grocery store and gas station right off the highway just out of town for decades. Sam has worked there after school and on weekends ever since you all were in middle school.
+
+“Do you think you’ll ever get out of here?”
+
+For a split second, something comes across Sam’s face. If you’re not mistaken, he seems angry. But then it goes away.
+“I honestly haven’t considered it.”
+
+“Really? Ever.”
+
+“I mean sure, but I <i>like</i> it here. My family’s here. The store’s here. I’ve never really been interested in school. Why would I leave?”
+
+That question didn’t feel rhetorical.
+“No. I get that.”
+
+You start towards the cooler, but Sam holds out half a bottle of water.
+“Want the rest of mine?”
+
+“Sure,” you say, taking it from him.
+
+“Just…come back and see me ok?”
+
+You haven’t even told him if you’re leaving or not. It doesn’t matter.
+“Ok.”
+
+* [Continue]
 ->finalRound
 
 == finalRound ==
@@ -554,12 +690,20 @@ TODO
 #time: 10:28 PM
 //whatever character is about to leave, and Heather makes her “we’ll all come back in ten years” speech
 //maybe option to include character you haven’t talked to in conversation? We’d need 4 rounds to be able to talk to everyone once
-// MATT: I think it could be cool here for people to start packing up and the last convo could be whoever you decide to ride home with. Now that I type that out, you’d probably ride home with heather. Maybe that’s an opportunity for some more choices that are about people rather than with them?
 // Also Matt: I’m not as married to talking to everyone. I think we can make it work no matter what. But if it’s important to you or it will make the 2nd half easier, we can add a fourth.
 
 TIME WILL ADVANCE. #class: timeWarning
 
 * [Bobby]
+{
+- bobby1 && not bobby2:
+	-> bobby2
+- bobby1 && bobby2:
+	-> bobby3
+- else:
+	-> bobby1
+}
+
 -> bobby3
 * [Sam]
 -> sam3
@@ -622,6 +766,32 @@ You and Bobby laugh and walk back to the tower with Sam.
 -> firstHalfWrap
 
 == sam3 ==
+“We <i>gotta</i> go over to Bobby’s one night and play Rock Band. It’s like Guitar Hero, but it’s the whole band.” Sam moves his arms wildly, imitating each instrument. “He was telling me about it on the way here.{bobbyRich: Plus, his parents are loaded. The house is crazy.}”
+
+“That does sound fun. Do they have {music}?”
+
+Sam scoffs.
+“Probably. I don’t know why you like that stuff. You need to listen to <i>real</i> music,” he says before air guitaring in front of you. This isn’t the beer or the weed. This is just Sam.
+
+“Well, we’ll make it happen this weekend,” you say to him.
+
+“Promise?”
+
+“Promise.”
+
+“OK, because I want to get some good quality hang time before you all go running off on me. {bobbyBasketball:Bobby’s leaving to go play basketball out of state, and who knows what the hell the rest of you are doing.}”
+
+“Sam,” you say, “I promise.”
+
+“I don’t wanna wait ten years to come back here with you guys, ok?” He’s looking you in the eyes now.
+
+You put a hand on each of his shoulders and gently shake him.
+“Ok. I got it.”
+
+“You’re a good friend,” he smiles. Then suddenly he’s annoyed. “Dammit, I didn’t want to get all weepy out here!” 
+
+Both of you laugh, and Sam shakes his arms out like that will do anything to help. You don’t know how many more times you’ll be out here together, but you’re glad you got to be here tonight.
+
 *[Continue]
 -> firstHalfWrap
 
