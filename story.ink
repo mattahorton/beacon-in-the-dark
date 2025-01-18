@@ -579,7 +579,7 @@ She begins flipping furiously through the CDs binder again. You see Bobby chuckl
 
 * Heather puts in a CD.
 -
-~ temp heatherMusic = ""
+~temp heatherMusic = ""
 {
     - music == "Weezer":
     ~heatherMusic = "TaylorSwift"
@@ -606,8 +606,7 @@ TIME WILL ADVANCE. #class: timeWarning
 
 == taylor2 ==
 TODO
-{
-- taylor1.taylorPush:
+{taylor1.taylorPush:
 	Taylor has stayed pretty quiet. You open your mouth to ask how she’s doing, but she interrupts you.
 
 “I’m not really in the mood. Sorry,” she says, not sounding terribly sorry.
@@ -616,6 +615,10 @@ You try to hide how hurt you feel, and move to talk to someone else.
 ->roundTwo.convoChoice2
 
 - else:
+-> talkedToTaylor
+}	
+
+== talkedToTaylor ==
 You turn to Taylor and raise your eyebrows in the universal sign for, “You good?” {taylor1:She <i>does</i> seem more relaxed than before, at least, and not just because of the beer.} 
 
 She shrugs with a smile, the universal sign for, “Yeah, I’m doing alright,” then looks behind you and tilts her head, the universal sign for, “So what’s up with that?”
@@ -632,7 +635,6 @@ An inscrutable expression passes over her face, before it settles back on neutra
 	You nod, ignoring the feeling there’s something more bugging Taylor than just graduation. If she wants to tell you, she will. In her own time.
 	*[Continue]
 ->finalRound
-}	
 
 	
 == heather2 ==
@@ -645,45 +647,47 @@ You get Heather’s attention as she comes back from the boombox, and lay back, 
 
 	->finalRound
 - else:
-	TODO EDIT to make sense for heather2
+	-> heather1inHeather2
+	}
 
-// “It’s weird, isn’t it?” Heather asks.
+== heather1inHeather2 ==
+TODO EDIT to make sense for heather2
 
-// “What is?”
+“It’s weird, isn’t it?” Heather asks.
 
-// “That we’re done. With school. With this place.”
+“What is?”
 
-// You look around at the field swaying softly in the breeze. As the sunlight continues to fade in the horizon, the field takes on an eerie red hue from the radio tower lights above you. It used to unnerve you, when you first came out here as a kid, but then it turned into something almost mystical. Like the world outside was gone, and it was just you and your friends illuminated by the slowly blinking light.
+“That we’re done. With school. With this place.”
 
-// {pcSmokes:You take a hit of the joint, the smoke of your exhale taking on that same mystical quality, then hand it back to Heather. }
+You look around at the field swaying softly in the breeze. As the sunlight continues to fade in the horizon, the field takes on an eerie red hue from the radio tower lights above you. It used to unnerve you, when you first came out here as a kid, but then it turned into something almost mystical. Like the world outside was gone, and it was just you and your friends illuminated by the slowly blinking light.
 
-// *”It doesn’t have to be forever[.”],” you say. <>
-// ->heatherNotForever
-// *”It’s like when you finish a really good book[.”],” you say. <>
-// ->heatherBook
+{pcSmokes:You take a hit of the joint, the smoke of your exhale taking on that same mystical quality, then hand it back to Heather. }
 
-// = heatherNotForever
-// “Our families still live here, even if we leave. The tower isn’t going anywhere.”
+*”It doesn’t have to be forever[.”],” you say. <>
+->heatherNotForever
+*”It’s like when you finish a really good book[.”],” you say. <>
+->heatherBook
+= heatherNotForever
+“Our families still live here, even if we leave. The tower isn’t going anywhere.”
 
-// Heather smiles kind of sadly. “It won’t be all of us though, you know? You, me, Sam, and Heather.” She glances at Bobby and takes a hit of the joint. “And Bobby, I guess.”
+Heather smiles kind of sadly. “It won’t be all of us though, you know? You, me, Sam, and Heather.” She glances at Bobby and takes a hit of the joint. “And Bobby, I guess.”
 
-// “And Bobby, apparently,” you agree.
+“And Bobby, apparently,” you agree.
 
-// Maybe she was right. Maybe this just isn’t something you can recapture. But maybe you should try, anyway.
+Maybe she was right. Maybe this just isn’t something you can recapture. But maybe you should try, anyway.
 
-// *[Continue]
-// ->finalRound
-// = heatherBook
-// “You close it for the last time, and there’s this feeling of loss. You had a great time reading it, and you’re glad you made it through, but now it’s done.”
-
-// “You can reread books,” Heather points out.
-
-// “But it’s not the same, is it? You can never capture the same feeling of reading it for the first time.”
-
-// Heather takes a hit of the joint, exhaling slowly. “It was a good fucking book.”
 *[Continue]
 ->finalRound
-}
+= heatherBook
+“You close it for the last time, and there’s this feeling of loss. You had a great time reading it, and you’re glad you made it through, but now it’s done.”
+
+“You can reread books,” Heather points out.
+
+“But it’s not the same, is it? You can never capture the same feeling of reading it for the first time.”
+
+Heather takes a hit of the joint, exhaling slowly. “It was a good fucking book.”
+*[Continue]
+->finalRound
 
 == bobby2 ==
 You wave to Bobby.
@@ -896,7 +900,7 @@ Both of you laugh, and Sam shakes his arms out like that will do anything to hel
 {#playonce: {music}.mp3 >> volume: 0.3|}
 VAR heatherLivesWithPC = false
 VAR heatherWithPC = false
-~ heatherLivesWithPC = (heather1 && heather2 && heather3) || (((heather1 && heather2) || (heather1 && heather3) || (heather2 && heather3)) && heather1.heatherNotForever)
+~ heatherLivesWithPC = (heather1 && heather2 && heather3) || (((heather1 && heather2) || (heather1 && heather3) || (heather2 && heather3)) && (heather1.heatherNotForever || heather1inHeather2.heatherNotForever))
 ~ heatherWithPC = heatherLivesWithPC || heather1 || heather2 || heather3
 
 It’s been a few years since you came back home, but it’s been almost 10 years since you drove down this exact stretch of country road. They repaved it since then.{heatherLivesWithPC: In the passenger seat, Heather looks up from her phone and stares at the purple-ish sunset.}
@@ -932,6 +936,86 @@ TODO
 
 {heatherWithPC: She's right. }It looks way different out here. For one, there's a big metal fence on the side of the road where the radio tower is. You don't know how long it goes, but as you round a corner, you can see the tower off in the distance. At least there's one thing that's familiar.
 
+The closer you get, though, the more worried you become. The fence isn’t ending.
+
+{heatherWithPC: “Did they fence it off? Don’t the Russells still own this land?”}
+
+You pull off the road as you arrive. There’s a gate here now, and it’s locked. {talkedToTaylor:Someone is leaning against it.}
+
+*[Continue]
+{ 
+- talkedToTaylor:-> introJohn
+-else: -> makingPlans
+}
+
+== introJohn ==
+#clear
+
+After Taylor left on graduation night, no one heard from her for several months. Not even her parents. You tried to invite her out to the tower several times that summer, but she never responded. You worried for her, but after a while there just wasn’t anything you could do.
+
+Sometime that fall, you got a call from a number you didn’t recognize.
+
+“Hello?”
+
+“Hey, it’s…Taylor.”
+
+“Oh my god. Taylor! Where’ve you been? We were worried about you!”
+
+Taylor chuckled on the other side of the call.
+“Thanks. I’m doing alright.”
+
+“Good. I’m glad you called.”
+
+“Hey, I wanted to let you know. I’m going by John these days.”
+
+Things immediately fell into place when he said that. The way he talked to you on graduation night. His disappearance after. You suddenly saw every interaction the two of you ever had from a new perspective.
+“Well then. I’m glad you called, John.”
+
+“I just wanted to say thanks. For being my friend. It meant a lot.”
+
+“Of course. You’re kind of quiet, but we all like spending time with you. Maybe we can hang out sometime soon!”
+
+“We’ll see,” he said. 
+
+* [Continue]
+-> makingPlans
+
+== makingPlans ==
+{
+- heatherWithPC && talkedToTaylor:”Oh my god, John!”
+Heather runs over and gives him a hug. You see him smile over her shoulder.
+}
+
+{talkedToTaylor:
+You wave.
+
+”Hey, John. Good to see you.”
+
+“You too,” he says. He gestures at the fence with his thumb. “What’s all this about?”
+
+“No idea,” you say, looking up and down the road for a way in.
+- else:
+You look up and down the road for a way in.
+}
+
+When did this fence go up? <i>Why</i> did it go up?
+
+{
+- heatherWithPC:
+”Should we call somebody?” asks Heather.
+
+“Who would we even call?” you say back.
+
+“I don’t know. Sam? He stuck around. He’s the most likely to know how to get in.
+- talkedToTaylor:
+“I guess we should call somebody. But who?” you say, not expecting an answer from John.
+
+“Sam, maybe?” he says back.
+
+That’s a good idea.
+- else:
+Who
+}
 
 -
     -> END
