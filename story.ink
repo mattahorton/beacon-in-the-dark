@@ -601,7 +601,13 @@ TIME WILL ADVANCE. #class: timeWarning
 *[Follow Sam to the cooler.]
 	->sam2
 *[Get Bobby’s attention.]
-	->bobby2
+{
+	- bobby1:
+		-> bobby2
+	- else:
+		-> bobby1
+}
+
 
 
 == taylor2 ==
