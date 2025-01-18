@@ -193,7 +193,7 @@ After a moment, you hear the trunk slam closed, and she comes back around carryi
 You glance at Taylor first, who shrugs, then choose…
 
 *[Bright Eyes]
-~ music = "Bright Eyes"
+~ music = "BrightEyes"
 #playonce: BrightEyes.mp3 >> volume: 0.3
 *[Weezer]
 ~ music = "Weezer"
@@ -202,7 +202,7 @@ You glance at Taylor first, who shrugs, then choose…
 ~ music = "Paramore"
 #playonce: Paramore.mp3 >> volume: 0.2
 *[Taylor Swift]
-~ music = "Taylor Swift"
+~ music = "TaylorSwift"
 #playonce: TaylorSwift.mp3 >> volume: 0.2
 
 -
@@ -313,6 +313,7 @@ Unlike Sam, Bobby is new. At least to this group.
 “Hey,” he says, looking directly at you in a way that’s kind of intimidating. “Got any more blankets?”
 {anxiousTruck:Heather gestures to you sitting on the cooler. “All out,” she says before you can open your mouth.|Before you can say anything, Heather says, “We didn’t think we’d need to bring extras.”}
 You give her a questioning look. “What? We don’t have any more.”
+Bobby looks between the two of you. “It’s chill if you don’t.”
 
 * {vibeOutside} “We can make room[.”],” you say, half directing it at Heather.
 	-> bobbyBlanket
@@ -333,6 +334,8 @@ Heather smiles tightly as you both move to make room.
 
 == bobbyForgot ==
 Taylor moves her folding chair a little farther away to make room for the blanket you grab out of your truck and unfurl on the grass between her and Heather. You always made sure to grab a larger one since Sam usually forgot to bring anything for himself, but Sam and Bobby sit close enough next to each other that you can fit comfortably on the overlap between it and Heather’s.
+
+Heather seems pleased with the arrangement, at least.
 -> backToBobby
 
 == backToBobby ==
@@ -446,7 +449,6 @@ You’ve spent enough time with Taylor to know this isn’t going to go anywhere
 #clear
 #image: blinking.gif # class: blinking
 #time: 8:40 PM
-TODO
 “It’s weird, isn’t it?” Heather asks{pcSmokes:, passing you the joint}.
 
 “What is?”
@@ -480,6 +482,7 @@ Maybe she was right. Maybe this just isn’t something you can recapture. But ma
 “But it’s not the same, is it? You can never capture the same feeling of reading it for the first time.”
 
 Heather takes a hit of the joint, exhaling slowly. “It was a good fucking book.”
+*[Continue]
 ->roundTwo
 == bobby1 ==
 #clear
@@ -574,13 +577,26 @@ Heather stands up and points into the air.
 
 She begins flipping furiously through the CDs binder again. You see Bobby chuckle, and Sam gets up to get another drink.
 
+* Heather puts in a CD.
+-
+~ temp heatherMusic = ""
+{
+    - music == "Weezer":
+    ~heatherMusic = "TaylorSwift"
+    - music == "TaylorSwift":
+    ~heatherMusic = "Weezer"
+    - else:
+    ~heatherMusic = "Weezer"
+}
+{#playonce: {heatherMusic}.mp3 >> volume: 0.3|}
+
 -> convoChoice2
 
--(convoChoice2)
+= convoChoice2
 TIME WILL ADVANCE. #class: timeWarning
 *[See how Taylor’s doing.]
 	->taylor2
-*[Heather]
+*[Gesture Heather over.]
 	->heather2
 *[Follow Sam to the cooler.]
 	->sam2
@@ -590,7 +606,8 @@ TIME WILL ADVANCE. #class: timeWarning
 
 == taylor2 ==
 TODO
-{taylor1.taylorPush:
+{
+- taylor1.taylorPush:
 	Taylor has stayed pretty quiet. You open your mouth to ask how she’s doing, but she interrupts you.
 
 “I’m not really in the mood. Sorry,” she says, not sounding terribly sorry.
@@ -613,22 +630,61 @@ Taylor snorts. “That’s certainly one way to look at it.” She waves off you
 An inscrutable expression passes over her face, before it settles back on neutral. “I’ve just got a lot on my mind, I guess,” she says with a shrug. “Graduation night and everything.”
 
 	You nod, ignoring the feeling there’s something more bugging Taylor than just graduation. If she wants to tell you, she will. In her own time.
-* [Continue]
+	*[Continue]
 ->finalRound
 }	
 
 	
 == heather2 ==
-TODO
+You get Heather’s attention as she comes back from the boombox, and lay back, patting the spot next to you.
 {heather1:
-	
+	Heather does a little dance to the music as she heads over to you, and accidentally runs into Bobby in the process, who had gotten up to go to the cooler with Sam. Her face goes red. “Sorry, I wasn’t paying attention.”
+	Bobby smiles. “All good. I should have known to clear off the dance floor.”
+	Heather laughs a little sheepishly. “Actually, we were about to do our requisite stargazing,” she says, gesturing to you. “Care to join us?”
 
 
+	->finalRound
+- else:
+	TODO EDIT to make sense for heather2
 
-else:
+// “It’s weird, isn’t it?” Heather asks.
 
-	}
+// “What is?”
+
+// “That we’re done. With school. With this place.”
+
+// You look around at the field swaying softly in the breeze. As the sunlight continues to fade in the horizon, the field takes on an eerie red hue from the radio tower lights above you. It used to unnerve you, when you first came out here as a kid, but then it turned into something almost mystical. Like the world outside was gone, and it was just you and your friends illuminated by the slowly blinking light.
+
+// {pcSmokes:You take a hit of the joint, the smoke of your exhale taking on that same mystical quality, then hand it back to Heather. }
+
+// *”It doesn’t have to be forever[.”],” you say. <>
+// ->heatherNotForever
+// *”It’s like when you finish a really good book[.”],” you say. <>
+// ->heatherBook
+
+// = heatherNotForever
+// “Our families still live here, even if we leave. The tower isn’t going anywhere.”
+
+// Heather smiles kind of sadly. “It won’t be all of us though, you know? You, me, Sam, and Heather.” She glances at Bobby and takes a hit of the joint. “And Bobby, I guess.”
+
+// “And Bobby, apparently,” you agree.
+
+// Maybe she was right. Maybe this just isn’t something you can recapture. But maybe you should try, anyway.
+
+// *[Continue]
+// ->finalRound
+// = heatherBook
+// “You close it for the last time, and there’s this feeling of loss. You had a great time reading it, and you’re glad you made it through, but now it’s done.”
+
+// “You can reread books,” Heather points out.
+
+// “But it’s not the same, is it? You can never capture the same feeling of reading it for the first time.”
+
+// Heather takes a hit of the joint, exhaling slowly. “It was a good fucking book.”
+*[Continue]
 ->finalRound
+}
+
 == bobby2 ==
 You wave to Bobby.
 
@@ -686,7 +742,7 @@ For a split second, something comes across Sam’s face. If you’re not mistake
 
 “I mean sure, but I <i>like</i> it here. My family’s here. The store’s here. I’ve never really been interested in school. Why would I leave?”
 
-That question didn’t feel rhetorical.
+That question doesn’t feel rhetorical.
 “No. I get that.”
 
 You start towards the cooler, but Sam holds out half a bottle of water.
@@ -828,14 +884,22 @@ Both of you laugh, and Sam shakes his arms out like that will do anything to hel
 == secondHalf ==
 #clear
 #delay: 1000
+#cleartime
+#stop
 10 Years Later #class: title
-#time:
 * [Continue]
 -> secondHalfIntro
 
 == secondHalfIntro ==
+#clear
 #background: RoadDusk.jpg
+{#playonce: {music}.mp3 >> volume: 0.3|}
+VAR heatherWithPC = false
+~ heatherWithPC = (heather1 && heather2 && heather3) || (((heather1 && heather2) || (heather1 && heather3) || (heather2 && heather3)) && heather1.heatherNotForever)
 
+It’s been a few years since you came back home, but it’s been almost 10 years since you drove down this exact stretch of country road. They repaved it since then.{heatherWithPC: In the passenger seat, Heather looks up from her phone and stares at the purple-ish sunset.}
+
+{heatherWithPC:“I forgot just how beautiful it can look out here.”}
 
 
 
