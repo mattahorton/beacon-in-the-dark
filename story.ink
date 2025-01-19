@@ -1,6 +1,6 @@
 VAR music = ""
 VAR artist = ""
-The Spot #class: title
+In Ten Years #class: title
 #delay: 1000
 by Jackie & Matt #class: subtitle
 #delay: 1000
@@ -211,9 +211,6 @@ You glance at Taylor first, who shrugs, then choose…
 #playonce: TaylorSwift.mp3 >> volume: 0.2
 
 -
-TODO figure out if we’re doing a randomized album function or background music
-TODO add descriptions of what you’re listening to
-
 Heather pops in the CD, and the three of you just chill and listen as you wait for Sam to get here. It was like any other night when it was just the three of you – Heather eyes closed, humming along, you taking in the scenery, and Taylor doodling in a pocket notebook she always carries around.
 
 It feels like the three of you have done this for years, but it was only last year that Heather invited Taylor out here for the first time.
@@ -445,7 +442,6 @@ Taylor looks up at you. “Yeah. Water would be nice. Thanks.”
 
 You hand Taylor her water and she goes back to drawing in her notebook.
 
-TODO
 *[Give Taylor some space.]
 	->taylorSpace
 *[Ask Taylor about her post-graduation plans.]
@@ -624,7 +620,6 @@ TIME WILL ADVANCE. #class: timeWarning
 
 
 == taylor2 ==
-TODO
 {taylor1.taylorPush:
 	Taylor has stayed pretty quiet. You open your mouth to ask how she’s doing, but she interrupts you.
 
@@ -695,7 +690,6 @@ You get Heather’s attention as she comes back from the boombox, and lay back, 
 
 
 == heather1inHeather2 ==
-TODO EDIT to make sense for heather2
 	Heather happily skips over and lays down, and the two of you spend a few minutes staring up at the stars.
 
 “It’s weird, isn’t it?” Heather asks, breaking the silence.
@@ -856,12 +850,14 @@ Heather looks between the four of you with misty eyes. “Thank you.” She snif
 
 There wasn’t a whole lot to pack, really, so it doesn’t take long for Taylor to be loaded up and ready to go. She has the door open and one is about to get into the car when she pauses and turns back. “Whatever else happens, I hope you guys have great lives. I mean it.” And with that, the four of you watch her get into the car and drive away.
 
-TODO add something here for after taylor leaves and before the player chooses what to do next maybe??
+*[Continue]
+-
+It’s just the four of you now, and the night is winding to a close.
 
 
 TIME WILL ADVANCE. #class: timeWarning
 
-* [Bobby]
+* [Bobby looks like he has something to say.]
 {
 - bobby1 && not bobby2:
 	-> bobby2
@@ -872,7 +868,7 @@ TIME WILL ADVANCE. #class: timeWarning
 }
 
 -> bobby3
-* [Sam]
+* [Sam seems excited.]
 -> sam3
 * [Check in with Heather.]
 -> heather3
@@ -1322,6 +1318,8 @@ You {not taylor1.taylorPush: and {talkedToTaylor:John|Taylor}} follow the rest o
 
 You and Heather lead the way, turning on the flashlights on your phones to light the path the two of you made all those years ago. It’s been improved upon since then with the addition of gravel, crunching loudly beneath your shoes in the quiet night.
 
+#image: blinking.gif # class: blinking
+
 You almost don’t need the flashlights. The blinking red light of the tower {sam1:,meant to warn pilots away, instead }draws the {taylor1.taylorPush:five|four} of you in.
 
 When you reach the small clearing around the tower, you see the gravel extends around and underneath it.
@@ -1350,7 +1348,8 @@ Sam snickers. “I see you’re still a cheeseball.”
 
 “I guess,” Sam relents with an exaggerated sigh.
 
-{taylor1.taylorPush:
+{
+- taylor1.taylorPush:
 	“I just wish Taylor were here,” Heather says.
 
 	“Yeah,” you say.
@@ -1366,7 +1365,43 @@ Sam still added her to the group to discuss the plans for your ten year reunion,
 “I hope you all have had as great of lives as I’ve had, but there’s nothing left for me there.”
 
 You don’t think you’ll hear from her again.
+
+“Wanna play a game?” Bobby asks, in a clear attempt to change the subject.
+
+The rest of you are grateful for it. “Yeah, what did you have in mind?” you ask.
+not talkedToTaylor:
+		“Hey, can I… Can I tell you all something?” Taylor asks.
+		
+		“Of course, Taylor,” Heather says. “What’s up?”
+		
+		Taylor looks down at her hands, where she’s tugging on her long sleeves. It’s hard to read her expression in the dark, the red light still keeping her face obscured. After a few moments, she takes a deep breath and says, “I go by John now, actually.” John’s voice has dropped, and it’s not until then you realize how strained it sounded before. He looks back up at you all, a little more assured. “I wasn’t sure I wanted to tell you, but being back together with everyone. It’s… I forgot how nice this was.”
+
+		Heather grasps John’s hands. “Thank you for telling us, John.”
+
+		John shrugs. “Yeah, well, whatever,” he says, still clearly as uncomfortable with all this emotional stuff as he was in high school. “I don’t want to make a thing out of it. I just wanted y’all to know.”
+
+		“In that case, John,” Bobby says, “I think it’s time for a game.”
+		
+		John visibly relaxes. “Yeah, sure. What game?”
+	
+- else: 
+“Wanna play a game?” Bobby asks abruptly.
+
+“Sure,” you say. “What did you have in mind?”
 		}
+
+“The last time we were here, we played Never Have I Ever. It feels right to do it again, you know?”
+	
+It does feel fitting, and the {taylor1.taylorPush:four|five} of you come up with prompts that high school you could have never dreamed of, some more exciting, some more mundane. You laugh and drink and indulge in junk food like you haven’t in years.
+
+You can’t remember who won and who lost all those years ago, and you don’t particularly care what the outcome will be this time. What matters is the {taylor1.taylorPush:four|five} of you are together, and {taylor1.taylorPush:while Taylor’s absence is felt, her last message to you reassured you all that she was happy. Life just pulled her in a different direction, and no|no} matter what the future holds, you will all be able to find your way back to each other.
+
+
+
+
+	
+	
+
 
 
 
