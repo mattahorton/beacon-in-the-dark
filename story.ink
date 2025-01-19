@@ -1078,7 +1078,8 @@ TODO
 Heather runs over and gives him a hug. You see him smile over her shoulder.
 }
 
-{talkedToTaylor:
+{
+- talkedToTaylor:
 You wave.
 
 ”Hey, John. Good to see you.”
