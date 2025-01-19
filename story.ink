@@ -975,9 +975,9 @@ You shrug. “Sure.”
 
 She leans back on her hands and thinks. “I can’t imagine it changing. Maybe that’s part of my problem,” she says wryly. “The sign for Joe’s Diner will fade a little more. The roads will have a few more potholes. <>
 {
-transferStudent: “But Joe will still be behind the counter giving coffee to ten year olds.”
-brokenArm: “But Walt will still rent horror movies to kids who are too young for them.”
-projectPartners: “But Mrs. Fletcher will still give B’s to students who submit flowers instead of essays for their projects.”
+- transferStudent: “But Joe will still be behind the counter giving coffee to ten year olds.”
+- brokenArm: “But Walt will still rent horror movies to kids who are too young for them.”
+- projectPartners: “But Mrs. Fletcher will still give B’s to students who submit flowers instead of essays for their projects.”
 }
 
 You both laugh.
@@ -1074,7 +1074,7 @@ Heather runs up to him as soon as you park the car. “John, hey! I’m so glad 
 You hug him as well. “It’s good to see you.”
 
 He smiles. “Same to you.”
-else: 
+- else: 
 You park and wave to him as you walk up. “Hey, John! Glad you made it.”
 
 He pulls you into a hug as you approach, a shocking contrast to how he was when you first met. “Of course. Can’t disappoint Heather, now can I?”
@@ -1119,7 +1119,7 @@ As you {heatherWithPC:and Heather} get out of your car, the door of the one alre
 Now that you’re close, you can more easily see it’s her, but the difference in how she used to look is still a little striking. Her pixie cut is the most obvious difference, but her face seems more angular now, and there’s something different about the way she holds herself when she moves that you can’t quite figure out.
 
 “Told you I’d try,” Taylor says. “Looks like it might not matter, though.” She gestures at the fence with her thumb.
-else:
+- else:
 You squint. “Taylor?”
 
 “Who else?” she asks.
@@ -1131,10 +1131,11 @@ As you get closer, you can more easily see it’s her, but the difference in how
 She smiles a little. “You, too.”
 
 “Not happy to see that, though,” you say, gesturing at the fence.
-
+}
 
 - else:
-You look up and down the road for a way in.}
+You look up and down the road for a way in.
+}
 
 When did this fence go up? <i>Why</i> did it go up?
 
@@ -1149,7 +1150,7 @@ When did this fence go up? <i>Why</i> did it go up?
 “That’s a good idea,” you say. You open the group chat.
 “Soooo looks like we can’t get to the tower. There’s a gate???” you send to your friends. “On our way to you, Sam.”
 
-- not taylorPush:
+- not taylor1.taylorPush:
 “I guess we should call somebody. But who?” you say, not expecting an answer from {johnInCar:Taylor|John}.
 
 “Sam, maybe?” {johnInCar:she|he} says back.
@@ -1179,14 +1180,19 @@ You open the group chat.
 // If John was waiting for us, he’s just there
 // If John was in the car, he’s still letting people call him Taylor and use she/her
 // If John didn’t show, do we need to do much here with him?
-Sam’s parents’ shop is a gas station right off the highway, several miles out from the center of town. {not samShop: It’s mainly for people driving by this town, but to this day it’s still where a lot of people get their basic necessities.} It’s not very busy when you pull into the lot{heatherWithPC:.|, but when you pull into a parking spot, you see Heather in the Corolla beside you.
+Sam’s parents’ shop is a gas station right off the highway, several miles out from the center of town. {not samShop: It’s mainly for people driving by this town, but to this day it’s still where a lot of people get their basic necessities.} It’s not very busy when you pull into the lot{heatherWithPC:.|, but when you pull into a parking spot, you see Heather in the Corolla beside you.}
 
 {
 - (talkedToTaylor || johnInCar) && heatherWithPC:
+TODO
 - talkedToTaylor || johnInCar:
+TODO
 - heatherWithPC:
+TODO
 - else:
+TODO
 }
+
 
 
 
