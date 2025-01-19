@@ -58,11 +58,11 @@ Eventually, you hear the tell-tale rumbling of Heather’s mom’s car in the di
 She parks her car near yours, angling it toward the circle of flattened grass for optimal headlight efficiency when the sun fully sets.
 
 {anxiousTruck:
-	“Did you just get here?” she asks as she drags a large bag loaded down with snacks and who knows what else out of the car with her.
+	“Did you just get here?” she asks, carrying a bag with her blanket poking out the top.
 	You shrug. “Something like that.”
 	She drops off her load near your usual spot. <>
 -else:
-She has a large bag full of snacks and who knows what else that she drops down in front of you, then digs through it and pulls out her own blanket and sets it out. “Been waiting long?” she asks, a hint of guilt in her voice.
+She’s carrying a bag, out of which she pulls own blanket and sets it out. “Been waiting long?” she asks, a hint of guilt in her voice.
 “Nah. Just taking in the evening air.”
 Heather smiles. “Couldn’t have asked for better weather.” She glances back at your truck. <>
 }
@@ -471,7 +471,7 @@ You look around at the field swaying softly in the breeze. As the sunlight conti
 = heatherNotForever
 “Our families still live here, even if we leave. The tower isn’t going anywhere.”
 
-Heather smiles kind of sadly. “It won’t be all of us though, you know? You, me, Sam, and Heather.” She glances at Bobby and takes a hit of the joint. “And Bobby, I guess.”
+Heather smiles kind of sadly. “It won’t be all of us though, you know? You, me, Sam, and Taylor.” She glances at Bobby and takes a hit of the joint. “And Bobby, apparently.”
 
 “And Bobby, apparently,” you agree.
 
@@ -650,34 +650,52 @@ An inscrutable expression passes over her face, before it settles back on neutra
 	
 == heather2 ==
 You get Heather’s attention as she comes back from the boombox, and lay back, patting the spot next to you.
+
 {heather1:
-	Heather does a little dance to the music as she heads over to you, and accidentally runs into Bobby in the process, who had gotten up to go to the cooler with Sam. Her face goes red. “Sorry, I wasn’t paying attention.”
-	Bobby smiles. “All good. I should have known to clear off the dance floor.”
-	Heather laughs a little sheepishly. “Actually, we were about to do our requisite stargazing,” she says, gesturing to you. “Care to join us?”
-	Bobby looks surprised, and smiles just a little wider. “Yeah, absolutely.”
-	Heather lays down next to you, and Bobby next to her.
-	“Do you know any constellations?” you ask.
-	“Yeah, Sam showed me some. There’s the big and little dippers.” You see his arm raised out the corner of your eye, but you don’t need to see where he’s pointing to find them. “And Virgo.
-
-
-	->finalRound
+	-> heatherAndBobby
 - else:
 	-> heather1inHeather2
 	}
+== heatherAndBobby ==
+	Heather does a little dance to the music as she heads over to you, and accidentally runs into Bobby in the process, who had gotten up to go to the cooler with Sam. Her face goes red. “Sorry, I wasn’t paying attention.”
+
+	Bobby smiles. “All good. I should have known to clear off the dance floor.”
+	Heather laughs a little sheepishly. “Actually, we were about to do our requisite stargazing,” she says, gesturing to you. “Care to join us?”
+
+	Bobby looks surprised, and smiles just a little wider. “Yeah, absolutely.”
+
+	Heather lays down next to you, and Bobby next to her.
+
+	“Do you know any constellations?” you ask.
+
+	“Yeah, Sam showed me some. There’s the big and little dippers.” You see his arm raised out the corner of your eye, but you don’t need to see where he’s pointing to find them. “And Virgo.”
+
+	You grin. “Those were the first ones I taught him.”
+
+	“And the first ones I taught <i>you</i>,” Heather says with a laugh.
+
+	“Just the first two!” you protest. “The dippers are easy – we had to check out a book with all the star maps to find Virgo or any of the others. Like Hydra.” You trace the long constellation with your finger. “I think that one’s Taylor’s favorite.”
+
+	The three of you are silent for a moment.
+
+	“You’ve all been friends for a while, huh?” Bobby says, sounding a little wistful.
+
+	“Mhm,” Heather confirms. “But it’s never too late to add another.”
+	->finalRound
+
 
 
 == heather1inHeather2 ==
 TODO EDIT to make sense for heather2
+	Heather happily skips over and lays down, and the two of you spend a few minutes staring up at the stars.
 
-“It’s weird, isn’t it?” Heather asks.
+“It’s weird, isn’t it?” Heather asks, breaking the silence.
 
 “What is?”
 
 “That we’re done. With school. With this place.”
 
 You look around at the field swaying softly in the breeze. As the sunlight continues to fade in the horizon, the field takes on an eerie red hue from the radio tower lights above you. It used to unnerve you, when you first came out here as a kid, but then it turned into something almost mystical. Like the world outside was gone, and it was just you and your friends illuminated by the slowly blinking light.
-
-{pcSmokes:You take a hit of the joint, the smoke of your exhale taking on that same mystical quality, then hand it back to Heather. }
 
 *”It doesn’t have to be forever[.”],” you say. <>
 ->heatherNotForever
@@ -686,7 +704,7 @@ You look around at the field swaying softly in the breeze. As the sunlight conti
 = heatherNotForever
 “Our families still live here, even if we leave. The tower isn’t going anywhere.”
 
-Heather smiles kind of sadly. “It won’t be all of us though, you know? You, me, Sam, and Heather.” She glances at Bobby and takes a hit of the joint. “And Bobby, I guess.”
+Heather smiles kind of sadly. “It won’t be all of us though, you know? You, me, Sam, and Taylor.” She pauses. “And Bobby, apparently.”
 
 “And Bobby, apparently,” you agree.
 
@@ -701,7 +719,7 @@ Maybe she was right. Maybe this just isn’t something you can recapture. But ma
 
 “But it’s not the same, is it? You can never capture the same feeling of reading it for the first time.”
 
-Heather takes a hit of the joint, exhaling slowly. “It was a good fucking book.”
+Heather sighs contentedly. “It was a good fucking book.”
 *[Continue]
 ->finalRound
 
@@ -784,12 +802,53 @@ You haven’t even told him if you’re leaving or not. It doesn’t matter.
 #image: blinking.gif # class: blinking
 #time: 10:28 PM
 
-As the last track finishes on the album Heather picked out, everyone gets quiet. {heather2:The game of Never Have I Ever ends with Bobby losing. Heather teases him for being “more adventurous than I thought.”|A spirited game of Never Have I Ever ends with Sam losing.}
+As the last track finishes on the album Heather picked out, everyone gets quiet. {heather1 && heather2:The game of Never Have I Ever ends with Bobby losing. Heather teases him for being “more adventurous than I thought.”|A spirited game of Never Have I Ever ends with Sam losing.}
 
 It’s been a great night. You’re glad you spent tonight with your friends rather than at some graduation party you’d just leave early anyway. It’s easier to get lost in a place like that than it is out here in the middle of nowhere.
 
 Taylor checks her watch and stands up to start gathering her things.
+
 “Wait!” Heather sounds almost panicked.
+
+Everyone turns toward her.
+
+“Is everything okay?” you ask.
+
+She looks self-conscious at the attention and chews on her lower lip. “I just…” She looks pleadingly at Taylor, then the rest of the group, {heatherAndBobby:Bobby included.} “When are we going to see each other again?”
+
+The air immediately turns uncomfortable. Taylor is clutching her arms to her chest and looking away. “This sort of thing happens,” she says.
+
+“It doesn’t have to!” Heather protests. She turns toward you.<>
+{
+- (heather1.heatherNotForever || heather1inHeather2.heatherNotForever): “You said as much yourself, right?”
+- (heather1.heatherBook || heather1inHeather2.heatherBook): “This doesn’t have to be where our story ends.”
+- else: “Don’t you think so?”
+}
+
+“Heather…” you begin.
+
+“Promise me you’ll come back,” she interrupts. She turns to the others. “All of you. Promise me ten years from today, no matter what we have going on in our lives, you’ll all come back here.” She points up to the blinking red lights of the radio tower and takes a shuddering breath. “We’ll use this as our guiding light and we’ll find our way back to each other.”
+
+You go up and hold her hands in your own. “I promise,” you say.
+
+Sam joins you, placing his hands on top. “Of course I promise,” he says with a wobbly grin.
+
+{heatherAndBobby || bobby1:Bobby adds his hands to the pile. {bobby1:He looks at you before looking back at Heather and says,} “I promise.”|Bobby hesitates for a moment, then adds his hands to the pile. “I promise, if you’ll have me.”</br>Heather smiles warmly. “Of course we will.”</br>Sam’s grin widens.}
+
+The four of you look expectantly at Taylor, who hasn’t moved.
+
+{
+- taylor2: She looks at you consideringly for a moment, then gives a small smile and places her hands on top. “Yeah. I promise, too.”
+- taylor1.taylorPush: She shifts on her feet. “Yeah. Sure. I promise.” She’s still not looking at any of you.
+- else: She squeezes her eyes shut for a moment, then looks at Heather, but stays where she’s standing. “I promise I’ll try, Heather. That’s the best I can do.”
+}
+
+Heather looks between the four of you with misty eyes. “Thank you.” She sniffles, then lets go of your hands, breaking the pile. “Let me help you pack your things, Taylor.”
+
+There wasn’t a whole lot to pack, really, so it doesn’t take long for Taylor to be loaded up and ready to go. She has the door open and one is about to get into the car when she pauses and turns back. “Whatever else happens, I hope you guys have great lives. I mean it.” And with that, the four of you watch her get into the car and drive away.
+
+TODO add something here for after taylor leaves and before the player chooses what to do next maybe??
+
 
 TIME WILL ADVANCE. #class: timeWarning
 
@@ -806,7 +865,7 @@ TIME WILL ADVANCE. #class: timeWarning
 -> bobby3
 * [Sam]
 -> sam3
-* [Heather]
+* [Check in with Heather.]
 -> heather3
 
 == bobby3 ==
@@ -895,6 +954,11 @@ Both of you laugh, and Sam shakes his arms out like that will do anything to hel
 -> firstHalfWrap
 
 == heather3 ==
+Heather’s sitting on the tarp, staring up at the tower. You sit next to her and nudge her with your elbow. “Hey.”
+
+She smiles at you, then turns back to the tower. “Hey.”
+
+
 *[Continue]
 -> firstHalfWrap
 
@@ -962,7 +1026,7 @@ You pull off the road as you arrive. There’s a gate here now, and it’s locke
 *[Continue]
 { 
 - talkedToTaylor:-> introJohn
--else: -> makingPlans
+- else: -> makingPlans
 }
 
 == introJohn ==
