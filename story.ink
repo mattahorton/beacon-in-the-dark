@@ -981,8 +981,12 @@ She smiles at you, then turns back to the tower. “Hey.”
 {#playonce: {music}.mp3 >> volume: 0.3|}
 VAR heatherLivesWithPC = false
 VAR heatherWithPC = false
+VAR samAndBobbyOwnShop = false
+VAR hesitantJohn = false
 ~ heatherLivesWithPC = (heather1 && heather2 && heather3) || (((heather1 && heather2) || (heather1 && heather3) || (heather2 && heather3)) && (heather1.heatherNotForever || heather1inHeather2.heatherNotForever))
 ~ heatherWithPC = heatherLivesWithPC || heather1 || heather2 || heather3
+~ samAndBobbyOwnShop = bobby2 || ((sam1 && sam2) || (sam2 && sam3) || (sam1 && sam3))
+~ hesitantJohn = not talkedToTaylor
 
 It’s been a few years since you came back home, but it’s been almost 10 years since you drove down this exact stretch of country road. They repaved it since then.{heatherLivesWithPC: In the passenger seat, Heather looks up from her phone and stares at the purple-ish sunset.}
 
@@ -1022,10 +1026,12 @@ The closer you get, though, the more worried you become. The fence isn’t endin
 {heatherWithPC: “Did they fence it off? Don’t the Russells still own this land?”}
 
 You pull off the road as you arrive. There’s a gate here now, and it’s locked. {talkedToTaylor:Someone is leaning against it.}
+{hesitantJohn: There’s another car waiting outside the gate.}
 
 *[Continue]
 { 
 - talkedToTaylor:-> introJohn
+- hesitantJohn: -> johnInCar
 - else: -> makingPlans
 }
 
@@ -1061,6 +1067,11 @@ Things immediately fell into place when he said that. The way he talked to you o
 * [Continue]
 -> makingPlans
 
+== johnInCar ==
+TODO
+* [Continue]
+-> makingPlans
+
 == makingPlans ==
 {
 - heatherWithPC && talkedToTaylor:”Oh my god, John!”
@@ -1075,6 +1086,8 @@ You wave.
 “You too,” he says. He gestures at the fence with his thumb. “What’s all this about?”
 
 “No idea,” you say, looking up and down the road for a way in.
+- johnInCar:
+TODO
 - else:
 You look up and down the road for a way in.
 }
@@ -1087,16 +1100,37 @@ When did this fence go up? <i>Why</i> did it go up?
 
 “Who would we even call?” you say back.
 
-“I don’t know. Sam? He stuck around. He’s the most likely to know how to get in.
+“I don’t know. Sam? He stuck around. He’s the most likely to know how to get in.”
+
+“That’s a good idea,” you say. You open the group chat.
+“Soooo looks like we can’t get to the tower. There’s a gate???” you send to your friends. “On our way to you, Sam.”
+
 - talkedToTaylor:
 “I guess we should call somebody. But who?” you say, not expecting an answer from John.
 
 “Sam, maybe?” he says back.
 
-That’s a good idea.
+That’s a good idea. You open the group chat.
+“Soooo looks like we can’t get to the tower. There’s a gate???” you send to your friends. “On our way to you, Sam.”
+- johnInCar:
+TODO
 - else:
-Who
+You look at the gate. There’s no sign, no phone number, no website. 
+
+You open the group chat.
+“Soooo looks like we can’t get to the tower. There’s a gate???” you send to your friends. “I’m coming to you, Sam.”
+
+{
+- not heatherWithPC:Heather is typing…
+#delay: 1000
+“Oh shit! See you at the shop then.”
 }
+}
+
+* [Continue]
+-> atTheShop
+
+== atTheShop ==
 
 
 
