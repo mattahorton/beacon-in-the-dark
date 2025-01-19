@@ -1190,13 +1190,8 @@ You open the group chat.
 -> atTheShop
 
 == atTheShop ==
+#clear
 #time: 8:28 PM
-// If heather’s not with us, we need to introduce her again DONE
-// If Sam and Bobby are together, they own the place and Bobby’s here too.
-// If Sam and Bobby are not together, he shows up a little after we arrive.
-// If John was waiting for us, he’s just there
-// If John was in the car, he’s still letting people call him Taylor and use she/her
-// If John didn’t show, do we need to do much here with him?
 Sam’s parents’ shop is a gas station right off the highway, several miles out from the center of town. {not samShop: It’s mainly for people driving by this town, but to this day it’s still where a lot of people get their basic necessities.} It’s not very busy when you pull into the lot{heatherWithPC:.|, but when you pull into a parking spot, you see Heather in the Corolla beside you.}
 
 {
@@ -1327,6 +1322,8 @@ You {not taylor1.taylorPush: and {talkedToTaylor:John|Taylor}} follow the rest o
 
 You and Heather lead the way, turning on the flashlights on your phones to light the path the two of you made all those years ago. It’s been improved upon since then with the addition of gravel, crunching loudly beneath your shoes in the quiet night.
 
+You almost don’t need the flashlights. The blinking red light of the tower {sam1:,meant to warn pilots away, instead }draws the {taylor1.taylorPush:five|four} of you in.
+
 When you reach the small clearing around the tower, you see the gravel extends around and underneath it.
 
 “Ah damn I didn’t think to grab blankets or anything,” Heather bemoans.
@@ -1335,11 +1332,42 @@ When you reach the small clearing around the tower, you see the gravel extends a
 
 “Eh, it’s fine. Sitting on a little gravel won’t hurtcha,” Sam says. “But I guess you could always sit on the cooler if you’re <i>really</i> too good for the ground,” he teases as he and Bobby drop the cooler next to the tower.
 
-Heather sticks her tongue out at him and the {not taylor1.taylorPush:four|three} of you laugh. {heatherWithPC:You haven’t seen her do that in years. }You heard somewhere that getting back with friends you knew in high school could pull out how you acted in high school, and you guess this is proof.
+Heather sticks her tongue out at him and the {not taylor1.taylorPush:five|four} of you laugh. {heatherWithPC:You haven’t seen her do that in years. }You heard somewhere that getting back with friends you knew in high school could pull out how you acted in high school, and you guess this is proof.
 
 You all get as comfortable as you can on the ground. You and Heather turn your flashlights off, and you lean back to stare up at the stars.
 
-“I can’t find the hydra constellation,” {taylor1.taylorPush:Heather|{johnInCar:Taylor|John}}
+They’re not as bright as they used to be, the added light pollution from the growth of the town in the past decade washes out some of the sky.
+
+“I can’t find the hydra constellation,” {taylor1.taylorPush:Heather|{talkedToTaylor:John|Taylor}} says mournfully.
+
+“At least we can still see the big dipper,” Sam says.
+
+“At least we’re all here together,” Heather says. {taylor1.taylorPush: “Well, most of us.”}
+
+Sam snickers. “I see you’re still a cheeseball.”
+
+“I think she’s allowed,” you say. “She’s the reason we’re all here, afterall.”
+
+“I guess,” Sam relents with an exaggerated sigh.
+
+{taylor1.taylorPush:
+	“I just wish Taylor were here,” Heather says.
+
+	“Yeah,” you say.
+	
+	Taylor had left town the day after graduation. Her parents said she had filled her station wagon with all of her belongings that would fit, and just left. No explanation. No goodbye. Nothing. Apparently she had been saving up more money from working at Joe’s Diner than anyone had realized.
+
+It wasn’t surprising, really.
+
+Every now and then, you’d check on her Facebook page, but it was even emptier than it was before. She had deleted a lot of her old photos and hidden most of her personal information: location, work history, hell, even gender, which seemed a bit much.
+
+Sam still added her to the group to discuss the plans for your ten year reunion, and each of you would attempt to reach out throughout the years, and if you were lucky, the message would be marked as “read.” A few weeks ago, when you all were solidifying your plans, you reached out again, asking one last time if she would show up, for old time’s sake, and you finally got a response for the first time in a decade.
+
+“I hope you all have had as great of lives as I’ve had, but there’s nothing left for me there.”
+
+You don’t think you’ll hear from her again.
+		}
+
 
 
 
