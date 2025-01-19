@@ -293,6 +293,7 @@ You and Sam go way back. You remember the day you met.
 
 * [Sam ate a bug at recess.] -> samBug
 * [You traded Pokémon cards.] -> samPokemon
+* [Sam’s parents own a shop off the highway.] -> samShop
 
 == samBug ==
 “Hey Sam. Can’t believe you actually graduated. To me you’re still the kid who ate a grasshopper in the 4th grade.”
@@ -309,6 +310,14 @@ Heather rolls her eyes and laughs.
 “<i>Hell</i> no! We made that trade fair and square. Besides we were 9.”
 
 “Fair’s pushing it. You gave me a Charmander,” you say while chuckling. “But I just wanted to mess with you.”
+-> bobbyIntro
+
+== samShop ==
+Sam’s parents own a gas station right off the highway. It’s the closest place for a lot of people in town to get basic groceries unless they want to drive 30 minutes into the next county. As a result, you spent a lot of time there as a kid.
+
+Once, your dad took you there and had a conversation that was far too long for you to stay interested in. Sam waved at you from behind the counter and took you into the back room where he had a PlayStation hooked up to a tiny TV.
+
+You don’t know how long you were there. It couldn’t have been long, but the way time stretches out when you’re a kid, it felt like hours. You and Sam were friends every since.
 -> bobbyIntro
 
 == bobbyIntro ==
@@ -607,10 +616,10 @@ TIME WILL ADVANCE. #class: timeWarning
 	->sam2
 *[Get Bobby’s attention.]
 {
-	- bobby1:
-		-> bobby2
-	- else:
-		-> bobby1
+- bobby1:
+	-> bobby2
+- else:
+	-> bobby1
 }
 
 
@@ -958,12 +967,30 @@ Heather’s sitting on the tarp, staring up at the tower. You sit next to her an
 
 She smiles at you, then turns back to the tower. “Hey.”
 
+You stare at the tower, too. The regular blinking of the light is mesmerizing. “What do you think things will be like in ten years?”
+
+“What, the town?”
+
+You shrug. “Sure.”
+
+She leans back on her hands and thinks. “I can’t imagine it changing. Maybe that’s part of my problem,” she says wryly. “The sign for Joe’s Diner will fade a little more. The roads will have a few more potholes. <>
+{
+transferStudent: “But Joe will still be behind the counter giving coffee to ten year olds.”
+brokenArm: “But Walt will still rent horror movies to kids who are too young for them.”
+projectPartners: “But Mrs. Fletcher will still give B’s to students who submit flowers instead of essays for their projects.”
+}
+
+You both laugh.
+
+“But even if everything changes,” Heather continues, “I’m glad we had this place. And I’m glad I had you.” She takes your hand and squeezes it.
+
+You squeeze it back. “Yeah. Me, too.”
+
 
 *[Continue]
 -> firstHalfWrap
 
 == firstHalfWrap ==
-* [Continue]
 -> secondHalf
 
 == secondHalf ==
@@ -1037,32 +1064,37 @@ You pull off the road as you arrive. There’s a gate here now, and it’s locke
 
 == introJohn ==
 #clear
+It’s a man, one so familiar to you now, but so unrecognizable compared to the last time you saw him here.
 
-After Taylor left on graduation night, no one heard from her for several months. Not even her parents. You tried to invite her out to the tower several times that summer, but she never responded. You worried for her, but after a while there just wasn’t anything you could do.
+{heatherWithPC:
+Heather runs up to him as soon as you park the car. “John, hey! I’m so glad you made it!” she squeals, embracing him.
 
-Sometime that fall, you got a call from a number you didn’t recognize.
+“I told you I would,” he says, hugging back with an ease he never had before.
 
-“Hello?”
+You hug him as well. “It’s good to see you.”
 
-“Hey, it’s…Taylor.”
+He smiles. “Same to you.”
+else: 
+You park and wave to him as you walk up. “Hey, John! Glad you made it.”
 
-“Oh my god. Taylor! Where’ve you been? We were worried about you!”
+He pulls you into a hug as you approach, a shocking contrast to how he was when you first met. “Of course. Can’t disappoint Heather, now can I?”
 
-Taylor chuckled on the other side of the call.
-“Thanks. I’m doing alright.”
+“She probably would have hunted you down and dragged you here herself.”
 
-“Good. I’m glad you called.”
+He snorts. “Knowing her, yeah.”
+}
 
-“Hey, I wanted to let you know. I’m going by John these days.”
+It’s almost odd to think that you ever knew him as anyone besides John. With every year, it gets harder to remember how he looked before, or his old name.
 
-Things immediately fell into place when he said that. The way he talked to you on graduation night. His disappearance after. You suddenly saw every interaction the two of you ever had from a new perspective.
-“Well then. I’m glad you called, John.”
+Taylor had left town the day after graduation. Her parents said she had filled her station wagon with all of her belongings that would fit, and just left. No explanation. No goodbye. Nothing. Apparently she had been saving up more money from working at Joe’s Diner than anyone had realized.
 
-“I just wanted to say thanks. For being my friend. It meant a lot.”
+It wasn’t surprising, really, as much as it hurt that she didn’t tell you.
 
-“Of course. You’re kind of quiet, but we all like spending time with you. Maybe we can hang out sometime soon!”
+For the next several months, you kept tabs on her Facebook page, looking for any hint of activity, and poked and messaged her once every couple of weeks. Just enough to let her know she was in your thoughts. But as time went on, you gave up any real hope of hearing from her again.
 
-“We’ll see,” he said. 
+And then one day you got a call from a number you didn’t recognize. It was Taylor on the other end, but she sounded different, like she had a cold, or maybe she was losing her voice for how much it seemed to crack. When you commented on it, asking if she felt okay, she just laughed. And then she asked you if you knew anything about transgender people.
+
+A lot of things suddenly made a lot of sense.
 
 * [Continue]
 -> makingPlans
@@ -1074,24 +1106,35 @@ TODO
 
 == makingPlans ==
 {
-- heatherWithPC && talkedToTaylor:”Oh my god, John!”
-Heather runs over and gives him a hug. You see him smile over her shoulder.
-}
-
-{
 - talkedToTaylor:
-You wave.
-
-”Hey, John. Good to see you.”
-
-“You too,” he says. He gestures at the fence with his thumb. “What’s all this about?”
+John releases you from the hug, then gestures at the fence with his thumb. “What’s all this about?”
 
 “No idea,” you say, looking up and down the road for a way in.
 - johnInCar:
-TODO
+As you {heatherWithPC:and Heather} get out of your car, the door of the one already there opens. At first you don’t recognize who steps out.
+
+{heatherWithPC:
+“Taylor?” Heather asks. “It is you!” She runs up and gives Taylor a hug, who reciprocates with an awkward pat on the back. “I wasn’t sure you’d make it.”
+
+Now that you’re close, you can more easily see it’s her, but the difference in how she used to look is still a little striking. Her pixie cut is the most obvious difference, but her face seems more angular now, and there’s something different about the way she holds herself when she moves that you can’t quite figure out.
+
+“Told you I’d try,” Taylor says. “Looks like it might not matter, though.” She gestures at the fence with her thumb.
+else:
+You squint. “Taylor?”
+
+“Who else?” she asks.
+
+As you get closer, you can more easily see it’s her, but the difference in how she used to look is still a little striking. Her pixie cut is the most obvious difference, but her face seems more angular now, and there’s something different about the way she holds herself when she moves that you can’t quite figure out.
+
+“Right, sorry,” you say with a sheepish laugh. “It’s great to see you.”
+
+She smiles a little. “You, too.”
+
+“Not happy to see that, though,” you say, gesturing at the fence.
+
+
 - else:
-You look up and down the road for a way in.
-}
+You look up and down the road for a way in.}
 
 When did this fence go up? <i>Why</i> did it go up?
 
@@ -1106,15 +1149,13 @@ When did this fence go up? <i>Why</i> did it go up?
 “That’s a good idea,” you say. You open the group chat.
 “Soooo looks like we can’t get to the tower. There’s a gate???” you send to your friends. “On our way to you, Sam.”
 
-- talkedToTaylor:
-“I guess we should call somebody. But who?” you say, not expecting an answer from John.
+- not taylorPush:
+“I guess we should call somebody. But who?” you say, not expecting an answer from {johnInCar:Taylor|John}.
 
-“Sam, maybe?” he says back.
+“Sam, maybe?” {johnInCar:she|he} says back.
 
 That’s a good idea. You open the group chat.
 “Soooo looks like we can’t get to the tower. There’s a gate???” you send to your friends. “On our way to you, Sam.”
-- johnInCar:
-TODO
 - else:
 You look at the gate. There’s no sign, no phone number, no website. 
 
@@ -1132,8 +1173,20 @@ You open the group chat.
 -> atTheShop
 
 == atTheShop ==
+// If heather’s not with us, we need to introduce her again
+// If Sam and Bobby are together, they own the place and Bobby’s here too.
+// If Sam and Bobby are not together, he shows up a little after we arrive.
+// If John was waiting for us, he’s just there
+// If John was in the car, he’s still letting people call him Taylor and use she/her
+// If John didn’t show, do we need to do much here with him?
+Sam’s parents’ shop is a gas station right off the highway, several miles out from the center of town. {not samShop: It’s mainly for people driving by this town, but to this day it’s still where a lot of people get their basic necessities.} It’s not very busy when you pull into the lot{heatherWithPC:.|, but when you pull into a parking spot, you see Heather in the Corolla beside you.
 
-
+{
+- (talkedToTaylor || johnInCar) && heatherWithPC:
+- talkedToTaylor || johnInCar:
+- heatherWithPC:
+- else:
+}
 
 
 
