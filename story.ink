@@ -1183,14 +1183,82 @@ You open the group chat.
 Sam’s parents’ shop is a gas station right off the highway, several miles out from the center of town. {not samShop: It’s mainly for people driving by this town, but to this day it’s still where a lot of people get their basic necessities.} It’s not very busy when you pull into the lot{heatherWithPC:.|, but when you pull into a parking spot, you see Heather in the Corolla beside you.}
 
 {
-- (talkedToTaylor || johnInCar) && heatherWithPC:
+- (not taylor1.taylorPush) && heatherWithPC:
+The three of you head into the shop.
+- not taylor1.taylorPush && not heatherWithPC:
+You and {talkedToTaylor:John|Taylor} get out of the car, and Heather strides quickly toward both of you.
+
+“{talkedToTaylor:John|Taylor}?” Heather asks. “It is you!” She runs up and gives {talkedToTaylor:John a hug, who squeezes her in return.|Taylor a hug, who reciprocates with an awkward pat on the back.} “I wasn’t sure you’d make it.”
+
+Then she turns to you.
+“It’s been way too long,” she says as she pulls you into the kind of hug that means something. “I’m sorry it’s been so long,” she says. “You know how it goes.”
+
+“Don’t worry about it. Just glad we’re here,” you say.
+
+She pulls away, leaves her hands on your shoulders, and turns to {talkedToTaylor:John|Taylor}. 
+“Shall we?”
+
+- heatherWithPC && taylor1.taylorPush:
+You and Heather get out of the car.
+
+“It’s so weird being back here with you,” she says. “Good weird!”
+
+You laugh and the two of you walk inside.
+}
+
+It might be a little cleaner than before, but otherwise the shop is exactly how you remember. Sam looks up from behind the counter and his eyes go wide.
+
+“Holy shit, guys. It’s so good to see you.”
+
+He comes out from behind the counter and takes turns giving hugs.
+“Sorry, I just saw your text. I should have told you it’s locked up now. My bad.”
+
+“Kind of important details there,” you say to him with a smirk.
+
+“Don’t worry, I’ve got a plan.” He points to his temple.
+
+{
+- samAndBobbyOwnShop: 
 TODO
-- talkedToTaylor || johnInCar:
-TODO
-- heatherWithPC:
-TODO
+// where’s bobby? He walks out from the back
+// we learn about them getting together. 
+// if bobby is rich, his parents lent him the money to buy it when sam’s parents needed the money
+// if not, sam’s parents gave it to him, and retired
 - else:
 TODO
+// where’s bobby? He walks in the door
+// we learn about bobby and sam’s previous relationship
+// It’s kind of awkward but nothing we can’t deal with
+}
+
+“Here,” says Sam. “I’ve got a couple more things to do before I can close the store. Take this, fill it up with whatever you want to take out there. It’s on {samAndBobbyOwnShop:us.|me. Just don’t go too crazy, OK?}”
+
+You all take a walk through the store, grabbing snacks and drinks. Normally, the beers you’d grab would be higher quality than what you drank in high school, but it feels right to go back to old habits when you’re home. 
+
+{
+- not taylor1.taylorPush:
+“{talkedToTaylor:John|Taylor}! Did you bring the tunes?!” Heather yells down the aisle.
+
+{talkedToTaylor:He|She} chuckles.
+“Yeah. I made sure to download some of the stuff we liked back then in case there’s still no reception out there.”
+}
+
+When you’re all done, Sam closes the register and quickly changes his shirt.
+“Alright. Let’s do this.”
+
+Bobby speaks up.
+“Hey I’ve got room for all of us if we want to ride together. I don’t really drink much anyway.”
+
+{
+- samAndBobbyOwnShop:
+“Awesome,” says Sam. “I’ll lock up and meet y’all out there.”
+- else: 
+”Dammit. I keep telling Bobby to get something smaller to drive. Now he’s gonna use this against me.”
+
+Bobby laughs
+“I’ll take any chance I can get.”
+
+“Yeah yeah.” Sam waves him off. “Go get in the car. I’ll lock up and meet you out there.”
 }
 
 
