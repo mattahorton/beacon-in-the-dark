@@ -1288,6 +1288,7 @@ Bobby laughs
 
 == atTheGate ==
 #clear
+#background: none.jpg
 #time: 8:57 PM
 The {taylor1.taylorPush:five|four} of you pile out of Bobby’s SUV. Heather grabs the cooler, and you help her carry it over to the gate. It’s one of those tall metal gates with thick, long bars just small enough that a person can’t get through. Bobby’s headlights reflect off of the bars and shine into your eyes.
 
