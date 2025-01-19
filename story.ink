@@ -1236,16 +1236,30 @@ He comes out from behind the counter and takes turns giving hugs.
 
 {
 - samAndBobbyOwnShop: 
-TODO
-// where’s bobby? He walks out from the back
-// we learn about them getting together. 
-// if bobby is rich, his parents lent him the money to buy it when sam’s parents needed the money
-// if not, sam’s parents gave it to him, and retired
+“Where’s Bobby?” you ask Sam.
+
+“Ahhh, he’s taking a call in the back,” says Sam. “We’ve finally got our feet under us after {bobbyRich:buying the place from my parents|my parents gave me the place}, and we’re working out a deal with a new distributor.”
+
+“Aww. It’s cute seeing you all like this.” Heather lightly punches Sam’s arm.
+
+“Yeah, yeah. Cute to you. Bobby’s a good partner, but an annoying boss.”
+
+“I’m not your boss, Sam. I just manage the books.”
+
+Bobby emerges from behind the counter and makes the rounds giving hugs. 10 years ago, you would be surprised to know he was here for this. In real life, you’re happy to see him. 
+
+Bobby and Sam dated for a bit after high school, but then Bobby left town to go to college. Sam stayed here working with his parents, like he always had. So he and Bobby split up, more to prevent further heartbreak than because anything was wrong. That was until a few years ago when Bobby came back to town. It didn’t take long for these two to find each other again.
+A couple months ago, Sam’s parents started talking about retiring, and{bobbyRich: Bobby’s parents loaned him the money to buy the shop from them.| they offered Sam the business.}
+
+“I couldn’t be happier to see you two,” you tell them.
 - else:
-TODO
-// where’s bobby? He walks in the door
-// we learn about bobby and sam’s previous relationship
-// It’s kind of awkward but nothing we can’t deal with
+“So, has anyone heard from Bobby?” Heather asks the group.
+
+You hear the door chime.
+
+“Sorry I’m late,” says Bobby, walking in tall and confident as ever. 10 years ago, you would be surprised to know he was here for this. In real life, you’re happy to see him. 
+
+Bobby and Sam dated for a bit after high school, but then Bobby left town to go to college. Sam stayed here working with his parents, like he always had. He and Bobby split up, more to prevent further heartbreak than because anything was wrong. But they were different people now, still friendly, but nothing more.
 }
 
 “Here,” says Sam. “I’ve got a couple more things to do before I can close the store. Take this, fill it up with whatever you want to take out there. It’s on {samAndBobbyOwnShop:us.|me. Just don’t go too crazy, OK?}”
@@ -1268,14 +1282,14 @@ Bobby speaks up.
 
 {
 - samAndBobbyOwnShop:
-“Awesome,” says Sam. “I’ll lock up and meet y’all out there.”
-- else: 
 ”Dammit. I keep telling Bobby to get something smaller to drive. Now he’s gonna use this against me.”
 
 Bobby laughs
 “I’ll take any chance I can get.”
 
 “Yeah yeah.” Sam waves him off. “Go get in the car. I’ll lock up and meet you out there.”
+- else: 
+“Awesome,” says Sam. “I’ll lock up and meet y’all out there.”
 }
 
 * [Continue]
@@ -1311,7 +1325,22 @@ You {not taylor1.taylorPush: and {talkedToTaylor:John|Taylor}} follow the rest o
 
 -
 
-The path you and Heather made all those years ago had been improved upon with the addition of gravel. Its crunching beneath your shoes seems loud in the quiet night.
+You and Heather lead the way, turning on the flashlights on your phones to light the path the two of you made all those years ago. It’s been improved upon since then with the addition of gravel, crunching loudly beneath your shoes in the quiet night.
+
+When you reach the small clearing around the tower, you see the gravel extends around and underneath it.
+
+“Ah damn I didn’t think to grab blankets or anything,” Heather bemoans.
+
+“Not sure they would have done much to cushion us against the rocks, anyway,” you say.
+
+“Eh, it’s fine. Sitting on a little gravel won’t hurtcha,” Sam says. “But I guess you could always sit on the cooler if you’re <i>really</i> too good for the ground,” he teases as he and Bobby drop the cooler next to the tower.
+
+Heather sticks her tongue out at him and the {not taylor1.taylorPush:four|three} of you laugh. {heatherWithPC:You haven’t seen her do that in years. }You heard somewhere that getting back with friends you knew in high school could pull out how you acted in high school, and you guess this is proof.
+
+You all get as comfortable as you can on the ground. You and Heather turn your flashlights off, and you lean back to stare up at the stars.
+
+“I can’t find the hydra constellation,” {taylor1.taylorPush:Heather|{johnInCar:Taylor|John}}
+
 
 
 
