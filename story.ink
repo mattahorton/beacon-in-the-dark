@@ -1005,6 +1005,7 @@ You squeeze it back. “Yeah. Me, too.”
 == secondHalfIntro ==
 #clear
 #background: RoadDusk.jpg
+#time: 8:09 PM
 {#playonce: {music}.mp3 >> volume: 0.3|}
 VAR heatherLivesWithPC = false
 VAR heatherWithPC = false
@@ -1041,9 +1042,8 @@ You and Heather ended up in the same city after high school. She went to college
 -> arriveAtSpot
 
 == arriveAtSpot ==
-TODO
 #clear
-
+#time: 8:13 PM
 {heatherWithPC:"We're getting close, I think. It looks different out here."}
 
 {heatherWithPC: She's right. }It looks way different out here. For one, there's a big metal fence on the side of the road where the radio tower is. You don't know how long it goes, but as you round a corner, you can see the tower off in the distance. At least there's one thing that's familiar.
@@ -1100,17 +1100,6 @@ A lot of things suddenly made a lot of sense.
 -> makingPlans
 
 == johnInCar ==
-TODO
-* [Continue]
--> makingPlans
-
-== makingPlans ==
-{
-- talkedToTaylor:
-John releases you from the hug, then gestures at the fence with his thumb. “What’s all this about?”
-
-“No idea,” you say, looking up and down the road for a way in.
-- johnInCar:
 As you {heatherWithPC:and Heather} get out of your car, the door of the one already there opens. At first you don’t recognize who steps out.
 
 {heatherWithPC:
@@ -1129,9 +1118,36 @@ As you get closer, you can more easily see it’s her, but the difference in how
 “Right, sorry,” you say with a sheepish laugh. “It’s great to see you.”
 
 She smiles a little. “You, too.”
-
-“Not happy to see that, though,” you say, gesturing at the fence.
 }
+
+It really seemed to be 50/50 whether Taylor would show up.
+
+Taylor had left town the day after graduation. Her parents said she had filled her station wagon with all of her belongings that would fit, and just left. No explanation. No goodbye. Nothing. Apparently she had been saving up more money from working at Joe’s Diner than anyone had realized.
+
+It wasn’t surprising, really.
+
+Every now and then, you’d check on her Facebook page, but it was even emptier than it was before. She had deleted a lot of her old photos and hidden most of her personal information: location, work history, hell, even gender, which seemed a bit much.
+
+But exactly one year later, she responded in the group chat Sam had set up for the five of you. Just a simple, “Hey, how’s it going?”
+
+You were all ecstatic to have her back, and tried asking what she’d been up to, but she dodged all the personal questions. Even now, none of you know where she lives or works or if she went to college or anything. She hadn’t even posted any pictures since high school, so this is truly the first time you {heatherWithPC:and Heather }are seeing her new look.
+
+When the ten year anniversary was finally approaching, {samAndBobbyOwnShop:she was hesitant, but said she’d try to make it|you did your best to convince her to come, but wasn’t sure how good of a job you did.}
+
+
+* [Continue]
+-> makingPlans
+
+== makingPlans ==
+{
+- talkedToTaylor:
+John releases you from the hug, then gestures at the fence with his thumb. “What’s all this about?”
+
+“No idea,” you say, looking up and down the road for a way in.
+- johnInCar:
+
+“So what’s up with that?” Taylor asks, gesturing to the fence with her thumb.
+
 
 - else:
 You look up and down the road for a way in.
@@ -1174,7 +1190,8 @@ You open the group chat.
 -> atTheShop
 
 == atTheShop ==
-// If heather’s not with us, we need to introduce her again
+#time: 8:28 PM
+// If heather’s not with us, we need to introduce her again DONE
 // If Sam and Bobby are together, they own the place and Bobby’s here too.
 // If Sam and Bobby are not together, he shows up a little after we arrive.
 // If John was waiting for us, he’s just there
@@ -1261,10 +1278,44 @@ Bobby laughs
 “Yeah yeah.” Sam waves him off. “Go get in the car. I’ll lock up and meet you out there.”
 }
 
+* [Continue]
+-> atTheGate
 
+== atTheGate ==
+#clear
+#time: 8:57 PM
+The {taylor1.taylorPush:five|four} of you pile out of Bobby’s SUV. Heather grabs the cooler, and you help her carry it over to the gate. It’s one of those tall metal gates with thick, long bars just small enough that a person can’t get through. Bobby’s headlights reflect off of the bars and shine into your eyes.
 
+“So, Sam,” you ask, “what’s this plan?”
+
+He grins.
+“You’re not gonna like it.”
+
+“I’m listening.”
+
+Sam doesn’t respond. Instead he walks up to the gate and starts to climb. 
+
+{samAndBobbyOwnShop:“Sam, be careful,” says Bobby, watching him make his way up.}
+“I like this plan a lot,” laughs Heather as she begins to make her way over. 
+
+Sam climbs halfway down the other side of the gate and points at the cooler. 
+“Bobby, do you think you can lift that over the top?”
+
+“Yep.” Bobby hits your shoulder. “Help me out.”
+
+Bobby climbs halfway up, you lift the cooler up to him and he gets it over the top of the gate with a single arm. Sam and Heather tag team getting it onto the ground without breaking anything.
+
+You {not taylor1.taylorPush: and {talkedToTaylor:John|Taylor}} follow the rest of your friends over, and when you drop to the ground, elation echoes throughout the group. You’re all laughing. It’s great to be back.
+
+*[Continue]
 
 -
+
+The path you and Heather made all those years ago had been improved upon with the addition of gravel. Its crunching beneath your shoes seems loud in the quiet night.
+
+
+
+
     -> END
 
 
