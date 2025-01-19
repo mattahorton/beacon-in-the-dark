@@ -1187,6 +1187,7 @@ You open the group chat.
 
 == atTheShop ==
 #clear
+#background: none.jpg
 #time: 8:28 PM
 Sam’s parents’ shop is a gas station right off the highway, several miles out from the center of town. {not samShop: It’s mainly for people driving by this town, but to this day it’s still where a lot of people get their basic necessities.} It’s not very busy when you pull into the lot{heatherWithPC:.|, but when you pull into a parking spot, you see Heather in the Corolla beside you.}
 
@@ -1288,7 +1289,6 @@ Bobby laughs
 
 == atTheGate ==
 #clear
-#background: none.jpg
 #time: 8:57 PM
 The {taylor1.taylorPush:five|four} of you pile out of Bobby’s SUV. Heather grabs the cooler, and you help her carry it over to the gate. It’s one of those tall metal gates with thick, long bars just small enough that a person can’t get through. Bobby’s headlights reflect off of the bars and shine into your eyes.
 
