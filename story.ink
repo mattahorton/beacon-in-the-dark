@@ -1370,7 +1370,7 @@ You don’t think you’ll hear from her again.
 “Wanna play a game?” Bobby asks, in a clear attempt to change the subject.
 
 The rest of you are grateful for it. “Yeah, what did you have in mind?” you ask.
-not talkedToTaylor:
+- not talkedToTaylor:
 		“Hey, can I… Can I tell you all something?” Taylor asks.
 		
 		“Of course, Taylor,” Heather says. “What’s up?”
